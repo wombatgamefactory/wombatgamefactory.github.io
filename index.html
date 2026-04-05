@@ -6,6 +6,24 @@
   <title>Wombat Game Factory — Board Game Design Studio</title>
   <meta name="description" content="Independent board game designer Dean Morris. Heavy euros and gateway strategy games. Prototypes with presence. Based in London, UK.">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .game-group { margin-bottom: 3.5rem; }
+    .game-group:last-child { margin-bottom: 0; }
+    .game-group-header {
+      display: flex; align-items: center; gap: 1.25rem;
+      margin-bottom: 1.5rem; padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .game-group-header h3 {
+      font-family: 'Oswald', sans-serif; font-size: 0.8rem; font-weight: 500;
+      letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--text-muted); white-space: nowrap;
+    }
+    .game-group-count {
+      font-family: 'Oswald', sans-serif; font-size: 0.68rem;
+      letter-spacing: 0.15em; color: var(--text-muted); margin-left: auto;
+    }
+  </style>
 </head>
 <body>
 
@@ -22,7 +40,6 @@
     </div>
   </nav>
 
-  <!-- ── Hero ── -->
   <section class="hero">
     <div class="container">
       <div class="hero-inner">
@@ -33,46 +50,39 @@
             <span class="studio-name">Wombat Game Factory</span>
           </h1>
           <p class="hero-description">
-            Dean Morris - Independent board game designer 🎲.</p>
-            Heavy euros & gateway strategy games.</p>
-            Prototypes with presence.</p>
-            Seeking publishing partners.</p>
+            Independent board game designer &#127922;<br>
+            Heavy euros &amp; gateway strategy games.<br>
+            Prototypes with presence.<br>
+            Seeking publishing partners.
           </p>
+          <div class="hero-stats">
+            <div class="stat"><div class="stat-number">2</div><div class="stat-label">Published</div></div>
+            <div class="stat"><div class="stat-number">1</div><div class="stat-label">Signed</div></div>
+            <div class="stat"><div class="stat-number">4</div><div class="stat-label">In Development</div></div>
+          </div>
         </div>
         <div class="hero-image">
-          <div class="photo-placeholder">
-            <img src="../images/dean_photo.png" alt="Photo of Dean" class="designer-photo">
-          </div>
+          <img src="images/dean_photo.png" alt="Photo of Dean" class="designer-photo">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Bio ── -->
   <section class="bio-section" id="about">
     <div class="container">
       <div class="bio-inner">
         <div class="bio-text">
           <div class="section-eyebrow">About the Designer</div>
           <h2>Dean Morris</h2>
-          <p>
-           Australian board game designer based in London, UK.
-          </p>
-          <p>
-            Known for intricate 3D printed prototypes featuring striking verticality
-            and fine detail, Dean's games combine deep strategic systems with
-            accessible entry points that reward repeated play.
-          </p>
-          <p>
-            Looking for publishers for some new gateway+ strategy games.
-          </p>
+          <p>Australian board game designer based in London, UK.</p>
+          <p>Known for intricate 3D printed prototypes featuring striking verticality and fine detail, Dean's games combine deep strategic systems with accessible entry points that reward repeated play.</p>
+          <p>Looking for publishers for some new gateway+ strategy games.</p>
         </div>
         <div id="contact">
           <div class="contact-card">
             <h3>Contact &amp; Links</h3>
             <div class="contact-item">
               <span class="contact-label">Email</span>
-              <!-- Replace with your actual email address -->
               <a href="mailto:hello@wombatgamefactory.com" class="contact-value">hello@wombatgamefactory.com</a>
             </div>
             <div class="contact-item">
@@ -85,7 +95,6 @@
             </div>
             <div class="contact-item">
               <span class="contact-label">BoardGameGeek</span>
-              <!-- Replace # with your BGG profile URL -->
               <a href="https://boardgamegeek.com/boardgamedesigner/123443/dean-morris" class="contact-value" target="_blank" rel="noopener">Dean Morris on BGG</a>
             </div>
             <div class="contact-item">
@@ -98,7 +107,6 @@
     </div>
   </section>
 
-  <!-- ── Games ── -->
   <section class="games-section" id="games">
     <div class="container">
       <div class="section-header">
@@ -106,171 +114,105 @@
         <h2>Games</h2>
       </div>
 
-      <div class="games-grid">
+      <!-- IN DEVELOPMENT -->
+      <div class="game-group">
+        <div class="game-group-header">
+          <h3>In Development</h3>
+          <span class="badge badge-development">Seeking Publisher</span>
+          <span class="game-group-count">4 titles</span>
+        </div>
+        <div class="games-grid">
 
-        <!-- Pacific Rails Inc -->
-        <a href="games/pacific-rails-inc.html" class="game-card">
-          <div class="game-card-image">
-            <img src="../images/pacific_rails_logo.webp" alt="Pacific Rails Inc">  
-          </div>
-          <div class="game-card-body">
-            <div class="game-card-header">
-              <span class="game-title">Pacific Rails Inc.</span>
-              <span class="badge badge-published">Published</span>
+          <a href="games/acacia.html" class="game-card">
+            <div class="game-card-image"><div class="game-logo-placeholder"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>Logo</div></div>
+            <div class="game-card-body">
+              <div class="game-card-header"><span class="game-title">Acacia</span><span class="badge badge-development">In Development</span></div>
+              <p class="game-description">[One or two sentence description of Acacia.]</p>
+              <div class="game-meta"><span>2–4 Players</span><span>60–120 Min</span><span>Age 14+</span></div>
             </div>
-            <p class="game-description">
-              Build the Transcontinental railroad in this worker placement network game!
-            </p>
-            <div class="game-meta">
-              <span>2–4 Players</span>
-              <span>60–90 Min</span>
-              <span>Age 14+</span>
-            </div>
-          </div>
-        </a>
+          </a>
 
-        <!-- Florence -->
-        <a href="games/florence.html" class="game-card">
-          <div class="game-card-image">
-            <img src="../images/florence_logo.webp" alt="Florence">  
-          </div>
-          <div class="game-card-body">
-            <div class="game-card-header">
-              <span class="game-title">Florence</span>
-              <span class="badge badge-published">Published</span>
+          <a href="games/firefly-festival.html" class="game-card">
+            <div class="game-card-image"><div class="game-logo-placeholder"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>Logo</div></div>
+            <div class="game-card-body">
+              <div class="game-card-header"><span class="game-title">Firefly Festival</span><span class="badge badge-development">In Development</span></div>
+              <p class="game-description">[One or two sentence description of Firefly Festival.]</p>
+              <div class="game-meta"><span>2–5 Players</span><span>45–90 Min</span><span>Age 12+</span></div>
             </div>
-            <p class="game-description">
-              Woo the Medici in a Euro-style area control game set in Renaissance-era Florence
-            </p>
-            <div class="game-meta">
-              <span>1–5 Players</span>
-              <span>40–80 Min</span>
-              <span>Age 14+</span>
-            </div>
-          </div>
-        </a>
+          </a>
 
-        <!-- Highlands -->
-        <a href="games/highlands.html" class="game-card">
-          <div class="game-card-image">
-            <div class="game-logo-placeholder">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
-              Logo
+          <a href="games/kentia.html" class="game-card">
+            <div class="game-card-image"><div class="game-logo-placeholder"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>Logo</div></div>
+            <div class="game-card-body">
+              <div class="game-card-header"><span class="game-title">Kentia</span><span class="badge badge-development">In Development</span></div>
+              <p class="game-description">[One or two sentence description of Kentia.]</p>
+              <div class="game-meta"><span>2–4 Players</span><span>60–90 Min</span><span>Age 12+</span></div>
             </div>
-          </div>
-          <div class="game-card-body">
-            <div class="game-card-header">
-              <span class="game-title">Highlands</span>
-              <span class="badge badge-signed">Signed</span>
-            </div>
-            <p class="game-description">
-              A card-driven engine building euro game set in the Scottish highlands.
-            </p>
-            <div class="game-meta">
-              <span>2–4 Players</span>
-              <span>90-120 Min</span>
-              <span>Age 14+</span>
-            </div>
-          </div>
-        </a>
+          </a>
 
-        <!-- Acacia -->
-        <a href="games/acacia.html" class="game-card">
-          <div class="game-card-image">
-            <div class="game-logo-placeholder">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
-              Logo
+          <a href="games/superfan-convention.html" class="game-card">
+            <div class="game-card-image"><div class="game-logo-placeholder"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>Logo</div></div>
+            <div class="game-card-body">
+              <div class="game-card-header"><span class="game-title">Superfan Convention</span><span class="badge badge-development">In Development</span></div>
+              <p class="game-description">[One or two sentence description of Superfan Convention.]</p>
+              <div class="game-meta"><span>3–6 Players</span><span>45–75 Min</span><span>Age 12+</span></div>
             </div>
-          </div>
-          <div class="game-card-body">
-            <div class="game-card-header">
-              <span class="game-title">Acacia</span>
-              <span class="badge badge-development">In Development</span>
-            </div>
-            <p class="game-description">
-              [One or two sentence description of Acacia.]
-            </p>
-            <div class="game-meta">
-              <span>2–4 Players</span>
-              <span>60–120 Min</span>
-              <span>Age 14+</span>
-            </div>
-          </div>
-        </a>
+          </a>
 
-        <!-- Firefly Festival -->
-        <a href="games/firefly-festival.html" class="game-card">
-          <div class="game-card-image">
-            <div class="game-logo-placeholder">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
-              Logo
-            </div>
-          </div>
-          <div class="game-card-body">
-            <div class="game-card-header">
-              <span class="game-title">Firefly Festival</span>
-              <span class="badge badge-development">In Development</span>
-            </div>
-            <p class="game-description">
-              [One or two sentence description of Firefly Festival.]
-            </p>
-            <div class="game-meta">
-              <span>2–5 Players</span>
-              <span>45–90 Min</span>
-              <span>Age 12+</span>
-            </div>
-          </div>
-        </a>
-
-        <!-- Kentia -->
-        <a href="games/kentia.html" class="game-card">
-          <div class="game-card-image">
-            <div class="game-logo-placeholder">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
-              Logo
-            </div>
-          </div>
-          <div class="game-card-body">
-            <div class="game-card-header">
-              <span class="game-title">Kentia</span>
-              <span class="badge badge-development">In Development</span>
-            </div>
-            <p class="game-description">
-              [One or two sentence description of Kentia.]
-            </p>
-            <div class="game-meta">
-              <span>2–4 Players</span>
-              <span>60–90 Min</span>
-              <span>Age 12+</span>
-            </div>
-          </div>
-        </a>
-
-        <!-- Superfan Convention -->
-        <a href="games/superfan-convention.html" class="game-card">
-          <div class="game-card-image">
-            <div class="game-logo-placeholder">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
-              Logo
-            </div>
-          </div>
-          <div class="game-card-body">
-            <div class="game-card-header">
-              <span class="game-title">Superfan Convention</span>
-              <span class="badge badge-development">In Development</span>
-            </div>
-            <p class="game-description">
-              [One or two sentence description of Superfan Convention.]
-            </p>
-            <div class="game-meta">
-              <span>3–6 Players</span>
-              <span>45–75 Min</span>
-              <span>Age 12+</span>
-            </div>
-          </div>
-        </a>
-
+        </div>
       </div>
+
+      <!-- SIGNED -->
+      <div class="game-group">
+        <div class="game-group-header">
+          <h3>Signed</h3>
+          <span class="badge badge-signed">In Production</span>
+          <span class="game-group-count">1 title</span>
+        </div>
+        <div class="games-grid">
+
+          <a href="games/highlands.html" class="game-card">
+            <div class="game-card-image"><div class="game-logo-placeholder"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>Logo</div></div>
+            <div class="game-card-body">
+              <div class="game-card-header"><span class="game-title">Highlands</span><span class="badge badge-signed">Signed</span></div>
+              <p class="game-description">A card-driven engine building euro game set in the Scottish highlands.</p>
+              <div class="game-meta"><span>2–4 Players</span><span>90–120 Min</span><span>Age 14+</span></div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- PUBLISHED -->
+      <div class="game-group">
+        <div class="game-group-header">
+          <h3>Published</h3>
+          <span class="badge badge-published">Available Now</span>
+          <span class="game-group-count">2 titles</span>
+        </div>
+        <div class="games-grid">
+
+          <a href="games/pacific-rails-inc.html" class="game-card">
+            <div class="game-card-image"><img src="images/pacific_rails_logo.webp" alt="Pacific Rails Inc"></div>
+            <div class="game-card-body">
+              <div class="game-card-header"><span class="game-title">Pacific Rails Inc.</span><span class="badge badge-published">Published</span></div>
+              <p class="game-description">Build the Transcontinental railroad in this worker placement network game!</p>
+              <div class="game-meta"><span>2–4 Players</span><span>60–90 Min</span><span>Age 14+</span></div>
+            </div>
+          </a>
+
+          <a href="games/florence.html" class="game-card">
+            <div class="game-card-image"><img src="images/florence_logo.webp" alt="Florence"></div>
+            <div class="game-card-body">
+              <div class="game-card-header"><span class="game-title">Florence</span><span class="badge badge-published">Published</span></div>
+              <p class="game-description">Woo the Medici in a Euro-style area control game set in Renaissance-era Florence.</p>
+              <div class="game-meta"><span>1–5 Players</span><span>40–80 Min</span><span>Age 14+</span></div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -281,8 +223,7 @@
         <ul class="footer-links">
           <li><a href="https://instagram.com/wombatgamefactory" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://youtube.com/@wombatgamefactory" target="_blank" rel="noopener">YouTube</a></li>
-          <!-- Replace # with your BGG profile URL -->
-          <li><a href="#" target="_blank" rel="noopener">BoardGameGeek</a></li>
+          <li><a href="https://boardgamegeek.com/boardgamedesigner/123443/dean-morris" target="_blank" rel="noopener">BoardGameGeek</a></li>
         </ul>
         <div class="footer-copy">© 2025 Dean Morris / Wombat Game Factory</div>
       </div>
