@@ -25,9 +25,14 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
   <link rel="stylesheet" href="../css/style.css">
+
+  <!-- GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
   <!-- Start cookieyes banner -->
-  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/b4b72588ac323168ef2bca929b5e5cd9/script.js"></script> 
-  <!-- End cookieyes banner -->  
+  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/b4b72588ac323168ef2bca929b5e5cd9/script.js"></script>
+  <!-- End cookieyes banner -->
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNNQF917JJ"></script>
   <script>
@@ -120,13 +125,36 @@
     <div class="page-section">
       <h3>Prototype in Play</h3>
       <div class="photos-grid">
-        <!-- Replace each photo-cell with: <div class="photo-cell"><img src="../images/Bucket List-1.jpg" alt="Bucket List prototype"></div> -->
-        <div class="photo-cell">Photo 1</div>
-        <div class="photo-cell">Photo 2</div>
-        <div class="photo-cell">Photo 3</div>
-        <div class="photo-cell">Photo 4</div>
-        <div class="photo-cell">Photo 5</div>
-        <div class="photo-cell">Photo 6</div>
+        <div class="photo-cell">
+          <a href="../images/bucket_list_game_01.jpg" class="glightbox" data-gallery="kentia-gallery" data-description="Kentia prototype in play">
+            <img src="../images/bucket_list_game_01.jpg" alt="Kentia prototype in play">
+          </a>
+        </div>
+        <div class="photo-cell">
+          <a href="../images/bucket_list_game_02.jpg" class="glightbox" data-gallery="birds-gallery" data-description="Bucket List prototype in play">
+            <img src="../images/bucket_list_game_02.jpg" alt="Bucket List prototype in play">
+          </a>
+        </div>
+        <div class="photo-cell">
+          <a href="../images/bucket_list_game_03.jpg" class="glightbox" data-gallery="birds-gallery" data-description="Bucket List prototype in play">
+            <img src="../images/bucket_list_game_03.jpg" alt="Bucket List prototype in play">
+          </a>
+        </div>
+        <div class="photo-cell">
+          <a href="../images/bucket_list_game_04.jpg" class="glightbox" data-gallery="birds-gallery" data-description="Bucket List prototype in play">
+            <img src="../images/bucket_list_game_04.jpg" alt="Bucket List prototype in play">
+          </a>
+        </div>
+        <div class="photo-cell">
+          <a href="../images/bucket_list_game_05.jpg" class="glightbox" data-gallery="birds-gallery" data-description="Bucket List prototype in play">
+            <img src="../images/bucket_list_game_05.jpg" alt="Bucket List prototype in play">
+          </a>
+        </div>
+        <div class="photo-cell">
+          <a href="../images/bucket_list_game_06.jpg" class="glightbox" data-gallery="birds-gallery" data-description="Bucket List prototype in play">
+            <img src="../images/bucket_list_game_06.jpg" alt="Bucket List prototype in play">
+          </a>
+        </div>
       </div>
     </div>
 
@@ -211,12 +239,21 @@
         <ul class="footer-links">
           <li><a href="https://instagram.com/wombatgamefactory" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://youtube.com/@wombatgamefactory" target="_blank" rel="noopener">YouTube</a></li>
-          <li><a href="#" target="_blank" rel="noopener">BoardGameGeek</a></li>
+          <li><a href="https://boardgamegeek.com/boardgamedesigner/123443/dean-morris" target="_blank" rel="noopener">BoardGameGeek</a></li>
         </ul>
         <div class="footer-copy">© 2026 Dean Morris / Wombat Game Factory</div>
       </div>
     </div>
   </footer>
+
+  <!-- Initialise GLightbox -->
+  <script>
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: false
+    });
+  </script>
 
 </body>
 </html>
