@@ -42,10 +42,18 @@
       font-family: 'Oswald', sans-serif; font-size: 0.68rem;
       letter-spacing: 0.15em; color: var(--text-muted); margin-left: auto;
     }
-    @media (min-width: 769px) {
-      .hero .hero-inner {
-      grid-template-columns: 1fr 1.5fr 1fr;
+    /* Hero logo - hide on mobile since logo is in nav */
+    .hero-logo {
+      display: flex;
       align-items: center;
+      justify-content: center;
+    }
+    @media (max-width: 768px) {
+      .hero-logo {
+        display: none;
+      }
+      .hero .hero-inner {
+        grid-template-columns: 1fr !important;
       }
     }
   </style>
@@ -82,7 +90,7 @@
 
   <section class="hero">
     <div class="container">
-      <div class="hero-inner" style="grid-template-columns: 1fr 1fr 1fr;">
+      <div class="hero-inner" style="grid-template-columns: 1fr 1.5fr 1fr;">
 
         <div class="hero-logo">
           <img src="images/wombat game factory logo landing.png" alt="Wombat Game Factory logo" style="max-width: 220px; display: block; margin: 0 auto;">
