@@ -39,6 +39,8 @@
 
     gtag('config', 'G-FNNQF917JJ');
   </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 </head>
 <body>
 
@@ -123,12 +125,12 @@
     <div class="page-section">
       <h3>Prototype in Play</h3>
       <div class="photos-grid">
-        <div class="photo-cell"><img src="../images/acacia_game_01.jpg" alt="Acacia prototype"></div>      </div>
-        <div class="photo-cell"><img src="../images/acacia_game_02.jpg" alt="Acacia prototype"></div>      </div>
-        <div class="photo-cell"><img src="../images/acacia_game_03.jpg" alt="Acacia prototype"></div>      </div>
-        <div class="photo-cell"><img src="../images/acacia_game_04.jpg" alt="Acacia prototype"></div>      </div>
-        <div class="photo-cell"><img src="../images/acacia_game_05.jpg" alt="Acacia prototype"></div>      </div>
-        <div class="photo-cell"><img src="../images/acacia_game_06.jpg" alt="Acacia prototype"></div>      </div>
+        <div class="photo-cell"><a href="../images/acacia_game_01.jpg" class="glightbox" data-gallery="acacia-gallery"><img src="../images/acacia_game_01.jpg" alt="Acacia prototype"></a></div>
+        <div class="photo-cell"><a href="../images/acacia_game_02.jpg" class="glightbox" data-gallery="acacia-gallery"><img src="../images/acacia_game_02.jpg" alt="Acacia prototype"></a></div>
+        <div class="photo-cell"><a href="../images/acacia_game_03.jpg" class="glightbox" data-gallery="acacia-gallery"><img src="../images/acacia_game_03.jpg" alt="Acacia prototype"></a></div>
+        <div class="photo-cell"><a href="../images/acacia_game_04.jpg" class="glightbox" data-gallery="acacia-gallery"><img src="../images/acacia_game_04.jpg" alt="Acacia prototype"></a></div>
+        <div class="photo-cell"><a href="../images/acacia_game_05.jpg" class="glightbox" data-gallery="acacia-gallery"><img src="../images/acacia_game_05.jpg" alt="Acacia prototype"></a></div>
+        <div class="photo-cell"><a href="../images/acacia_game_06.jpg" class="glightbox" data-gallery="acacia-gallery"><img src="../images/acacia_game_06.jpg" alt="Acacia prototype"></a></div>
     </div>
 
     <!-- ── Video ── -->
@@ -209,6 +211,14 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: false
+    });
+  </script>
 
 </body>
 </html>
