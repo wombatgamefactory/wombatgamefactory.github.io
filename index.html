@@ -42,6 +42,12 @@
       font-family: 'Oswald', sans-serif; font-size: 0.68rem;
       letter-spacing: 0.15em; color: var(--text-muted); margin-left: auto;
     }
+    @media (min-width: 769px) {
+      .hero .hero-inner {
+      grid-template-columns: 1fr 1.5fr 1fr;
+      align-items: center;
+      }
+    }
   </style>
   <!-- Start cookieyes banner -->
   <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/b4b72588ac323168ef2bca929b5e5cd9/script.js"></script> 
@@ -61,7 +67,10 @@
   <nav class="site-nav">
     <div class="container">
       <div class="nav-inner">
-        <a href="index.html" class="nav-logo">Wombat <span>Game Factory</span></a>
+        <a href="index.html" class="nav-logo">
+          <img src="images/wombat game factory logo landing.png" alt="Wombat Game Factory logo" style="height: 32px; vertical-align: middle; margin-right: 0.5rem;">
+          Wombat <span>Game Factory</span>
+        </a>
         <ul class="nav-links">
           <li><a href="#games">Games</a></li>
           <li><a href="#about">About</a></li>
@@ -73,7 +82,12 @@
 
   <section class="hero">
     <div class="container">
-      <div class="hero-inner">
+      <div class="hero-inner" style="grid-template-columns: 1fr 1fr 1fr;">
+
+        <div class="hero-logo">
+          <img src="images/wombat game factory logo landing.png" alt="Wombat Game Factory logo" style="max-width: 220px; display: block; margin: 0 auto;">
+        </div>
+
         <div class="hero-content">
           <div class="hero-eyebrow">Independent Game Design Studio</div>
           <h1 class="hero-title">
@@ -87,9 +101,11 @@
             Seeking publishing partners.
           </p>
         </div>
+
         <div class="hero-image">
           <img src="images/dean_photo.png" alt="Photo of Dean" class="designer-photo">
         </div>
+
       </div>
     </div>
   </section>
@@ -259,7 +275,7 @@
           <li><a href="https://youtube.com/@wombatgamefactory" target="_blank" rel="noopener">YouTube</a></li>
           <li><a href="https://boardgamegeek.com/boardgamedesigner/123443/dean-morris" target="_blank" rel="noopener">BoardGameGeek</a></li>
         </ul>
-        <div class="footer-copy">© 2025 Dean Morris / Wombat Game Factory</div>
+        <div class="footer-copy">© 2026 Dean Morris / Wombat Game Factory</div>
       </div>
     </div>
   </footer>
