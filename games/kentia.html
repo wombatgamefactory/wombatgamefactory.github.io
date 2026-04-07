@@ -30,6 +30,58 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
+  <style>
+    /* Left column: logo stacked above publisher resources */
+    .game-logo-column {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .publisher-quick-links {
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      padding: 1.25rem;
+    }
+    .publisher-quick-links h4 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 1rem;
+    }
+    .quick-link {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text);
+      transition: color 0.2s;
+      font-size: 0.9rem;
+    }
+    .quick-link:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .quick-link:hover { color: var(--copper-light); }
+    .quick-link-icon { font-size: 1.1rem; flex-shrink: 0; }
+    .quick-link-label {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--cream);
+    }
+    .quick-link:hover .quick-link-label { color: var(--copper-light); }
+    .quick-link-arrow {
+      margin-left: auto;
+      color: var(--copper);
+      font-size: 0.8rem;
+    }
+  </style>
+
   <!-- Start cookieyes banner -->
   <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/b4b72588ac323168ef2bca929b5e5cd9/script.js"></script>
   <!-- End cookieyes banner -->
@@ -73,10 +125,33 @@
     <div class="container">
       <div class="game-hero-inner">
 
-        <div class="game-logo-box">
-          <img src="../images/kentia_logo_main.jpg" alt="Kentia logo">
+        <!-- Left column: logo + publisher resources -->
+        <div class="game-logo-column">
+          <div class="game-logo-box">
+            <img src="../images/kentia_logo_main.jpg" alt="Kentia logo">
+          </div>
+
+          <div class="publisher-quick-links">
+            <h4>Publisher Resources</h4>
+            <a href="../files/kentia_sell_sheet.pdf" class="quick-link" target="_blank" rel="noopener">
+              <span class="quick-link-icon">📄</span>
+              <span class="quick-link-label">Sell Sheet</span>
+              <span class="quick-link-arrow">↓</span>
+            </a>
+            <a href="#" class="quick-link" target="_blank" rel="noopener">
+              <span class="quick-link-icon">📖</span>
+              <span class="quick-link-label">Rulebook</span>
+              <span class="quick-link-arrow">↓</span>
+            </a>
+            <a href="../index.html#contact" class="quick-link">
+              <span class="quick-link-icon">✉️</span>
+              <span class="quick-link-label">Request a Demo</span>
+              <span class="quick-link-arrow">→</span>
+            </a>
+          </div>
         </div>
 
+        <!-- Right column: game info -->
         <div class="game-info">
           <div class="game-info-header">
             <h1 class="game-page-title">Kentia</h1>
@@ -166,47 +241,11 @@
     <!-- ── Video ── -->
     <div class="page-section">
       <h3>Video</h3>
-      <!-- Once you have a YouTube video, replace the placeholder div with:
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Kentia gameplay video"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
-      -->
       <div class="video-placeholder">
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
           <polygon points="5 3 19 12 5 21 5 3"/>
         </svg>
         Video Coming Soon
-      </div>
-    </div>
-
-    <!-- ── Assets ── -->
-    <div class="page-section">
-      <h3>Publisher Resources</h3>
-      <div class="assets-grid">
-
-        <a href="../files/kentia_sell_sheet.pdf" class="asset-card" target="_blank" rel="noopener">
-          <div class="asset-icon">📄</div>
-          <div class="asset-name">Sell Sheet</div>
-          <div class="asset-desc">One-page overview of the game for publishers.</div>
-          <div class="asset-link">Download PDF →</div>
-        </a>
-
-        <a href="#" class="asset-card" target="_blank" rel="noopener">
-          <div class="asset-icon">📖</div>
-          <div class="asset-name">Rulebook</div>
-          <div class="asset-desc">Full rules for the current version of the prototype.</div>
-          <div class="asset-link">Download PDF →</div>
-        </a>
-
-        <a href="../index.html#contact" class="asset-card">
-          <div class="asset-icon">✉️</div>
-          <div class="asset-name">Request a Demo</div>
-          <div class="asset-desc">Interested in playing Kentia? Get in touch to arrange a session.</div>
-          <div class="asset-link">Contact Dean →</div>
-        </a>
-
       </div>
     </div>
   </div>
