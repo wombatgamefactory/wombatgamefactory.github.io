@@ -25,15 +25,16 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
   <link rel="stylesheet" href="../css/style.css">
-  <!-- Start cookieyes banner -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
   <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/b4b72588ac323168ef2bca929b5e5cd9/script.js"></script> 
-  <!-- End cookieyes banner -->    <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNNQF917JJ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-FNNQF917JJ');
   </script>
 </head>
@@ -64,13 +65,33 @@
     </div>
   </div>
 
-  <!-- ── Game Hero ── -->
   <section class="game-hero">
     <div class="container">
       <div class="game-hero-inner">
 
-        <div class="game-logo-box">
-          <img src="../images/superfans_logo_main.jpg" alt="Superfan Convention logo">
+        <div class="game-logo-column">
+          <div class="game-logo-box">
+            <img src="../images/superfans_logo_main.jpg" alt="Superfan Convention logo">
+          </div>
+
+          <div class="publisher-quick-links">
+            <h4>Publisher Resources</h4>
+            <a href="#" class="quick-link" target="_blank" rel="noopener">
+              <span class="quick-link-icon">📄</span>
+              <span class="quick-link-label">Sell Sheet</span>
+              <span class="quick-link-arrow">↓</span>
+            </a>
+            <a href="#" class="quick-link" target="_blank" rel="noopener">
+              <span class="quick-link-icon">📖</span>
+              <span class="quick-link-label">Rulebook</span>
+              <span class="quick-link-arrow">↓</span>
+            </a>
+            <a href="../index.html#contact" class="quick-link">
+              <span class="quick-link-icon">✉️</span>
+              <span class="quick-link-label">Request a Demo</span>
+              <span class="quick-link-arrow">→</span>
+            </a>
+          </div>
         </div>
 
         <div class="game-info">
@@ -104,43 +125,62 @@
           </div>
 
           <p class="game-description-full">
-            Superfan Convention is a euro-style worker queueing game for 2–5 players set at a sprawling ComicCon-style event. Players lead rival fan clubs competing to meet celebrities, collect selfies, and rack up victory points across a shared convention floor. The theme is warm, humorous, and broadly accessible — populated by parody versions of beloved franchises across six intellectual properties, with 18 distinct celebrities whose schedules, appearances, and departure times mirror the chaotic reality of a real convention weekend.</p>
-            The central design tension comes from movement. Workers traverse the board using coffee as a fuel resource, creating a genuine spatial puzzle around positioning and efficiency. Usher volunteers stationed around the venue return coffee when passed, rewarding players who plan their routes carefully rather than spending freely. Celebrities follow predetermined routes on a visible schedule, so players must anticipate where their targets will be — not just where they are now. This creates a game of converging timelines: your workers, your rivals' workers, and a cast of celebrities all moving through the same space simultaneously.</p>
-            Scoring is deliberately multi-pathed. Swag cards offer colour-coded tactical advantages, while Achievement cards open up asymmetric scoring strategies that reward different play styles — completionists, opportunists, and specialists alike. No two sessions play the same way, and the variable celebrity lineup and achievement spread ensure strong replayability. The design is positioned at medium weight: approachable enough for hobbyist tables, deep enough to reward repeated play.</p>
-            For publishers, Superfan Convention sits at the intersection of two proven audiences — the euro efficiency-puzzle crowd and the pop-culture-enthusiast market — in the same space as Viticulture and Dinosaur Island. The theme is instantly legible to anyone who has ever waited in a signing queue, and the visual identity (a plasticine, Aardman-influenced aesthetic) gives it strong shelf presence and a tone that stands apart from the genre's more serious entries. It's a game that looks like a party and plays like a puzzle.</p>
+            Superfan Convention is a euro-style worker queueing game for 2–5 players set at a sprawling ComicCon-style event. Players lead rival fan clubs competing to meet celebrities, collect selfies, and rack up victory points across a shared convention floor. The theme is warm, humorous, and broadly accessible — populated by parody versions of beloved franchises across six intellectual properties, with 18 distinct celebrities whose schedules, appearances, and departure times mirror the chaotic reality of a real convention weekend.
           </p>
-
+          <p class="game-description-full">
+            The central design tension comes from movement. Workers traverse the board using coffee as a fuel resource, creating a genuine spatial puzzle around positioning and efficiency. Usher volunteers stationed around the venue return coffee when passed, rewarding players who plan their routes carefully rather than spending freely. Celebrities follow predetermined routes on a visible schedule, so players must anticipate where their targets will be — not just where they are now. This creates a game of converging timelines: your workers, your rivals' workers, and a cast of celebrities all moving through the same space simultaneously.
+          </p>
+          <p class="game-description-full">
+            Scoring is deliberately multi-pathed. Swag cards offer colour-coded tactical advantages, while Achievement cards open up asymmetric scoring strategies that reward different play styles — completionists, opportunists, and specialists alike. No two sessions play the same way, and the variable celebrity lineup and achievement spread ensure strong replayability. The design is positioned at medium weight: approachable enough for hobbyist tables, deep enough to reward repeated play.
+          </p>
+          <p class="game-description-full">
+            For publishers, Superfan Convention sits at the intersection of two proven audiences — the euro efficiency-puzzle crowd and the pop-culture-enthusiast market — in the same space as Viticulture and Dinosaur Island. The theme is instantly legible to anyone who has ever waited in a signing queue, and the visual identity (a plasticine, Aardman-influenced aesthetic) gives it strong shelf presence and a tone that stands apart from the genre's more serious entries. It's a game that looks like a party and plays like a puzzle.
+          </p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ── Photos ── -->
   <div class="container">
     <div class="page-section">
       <h3>Prototype in Play</h3>
       <div class="photos-grid">
-        <!-- Replace each photo-cell with: <div class="photo-cell"><img src="../images/superfan-convention-1.jpg" alt="Superfan Convention prototype"></div> -->
-        <div class="photo-cell">Photo 1</div>
-        <div class="photo-cell">Photo 2</div>
-        <div class="photo-cell">Photo 3</div>
-        <div class="photo-cell">Photo 4</div>
-        <div class="photo-cell">Photo 5</div>
-        <div class="photo-cell">Photo 6</div>
+        <div class="photo-cell">
+          <a href="../images/superfan-convention-1.jpg" class="glightbox" data-gallery="superfan-gallery" data-description="Superfan Convention prototype in play">
+            <img src="../images/superfan-convention-1.jpg" alt="Superfan Convention prototype">
+          </a>
+        </div>
+        <div class="photo-cell">
+          <a href="../images/superfan-convention-2.jpg" class="glightbox" data-gallery="superfan-gallery" data-description="Superfan Convention prototype in play">
+            <img src="../images/superfan-convention-2.jpg" alt="Superfan Convention prototype">
+          </a>
+        </div>
+        <div class="photo-cell">
+          <a href="../images/superfan-convention-3.jpg" class="glightbox" data-gallery="superfan-gallery" data-description="Superfan Convention prototype in play">
+            <img src="../images/superfan-convention-3.jpg" alt="Superfan Convention prototype">
+          </a>
+        </div>
+        <div class="photo-cell">
+          <a href="../images/superfan-convention-4.jpg" class="glightbox" data-gallery="superfan-gallery" data-description="Superfan Convention prototype in play">
+            <img src="../images/superfan-convention-4.jpg" alt="Superfan Convention prototype">
+          </a>
+        </div>
+        <div class="photo-cell">
+          <a href="../images/superfan-convention-5.jpg" class="glightbox" data-gallery="superfan-gallery" data-description="Superfan Convention prototype in play">
+            <img src="../images/superfan-convention-5.jpg" alt="Superfan Convention prototype">
+          </a>
+        </div>
+        <div class="photo-cell">
+          <a href="../images/superfan-convention-6.jpg" class="glightbox" data-gallery="superfan-gallery" data-description="Superfan Convention prototype in play">
+            <img src="../images/superfan-convention-6.jpg" alt="Superfan Convention prototype">
+          </a>
+        </div>
       </div>
     </div>
 
-    <!-- ── Video ── -->
     <div class="page-section">
       <h3>Video</h3>
-      <!-- Once you have a YouTube video, replace the placeholder div with:
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Superfan Convention gameplay video"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
-      -->
       <div class="video-placeholder">
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
           <polygon points="5 3 19 12 5 21 5 3"/>
@@ -148,40 +188,8 @@
         Video Coming Soon
       </div>
     </div>
-
-    <!-- ── Assets ── -->
-    <div class="page-section">
-      <h3>Publisher Resources</h3>
-      <div class="assets-grid">
-
-        <a href="#" class="asset-card" target="_blank" rel="noopener">
-          <!-- Replace # with your Google Drive sell sheet URL -->
-          <div class="asset-icon">📄</div>
-          <div class="asset-name">Sell Sheet</div>
-          <div class="asset-desc">One-page overview of the game for publishers.</div>
-          <div class="asset-link">Download PDF →</div>
-        </a>
-
-        <a href="#" class="asset-card" target="_blank" rel="noopener">
-          <!-- Replace # with your Google Drive rulebook URL -->
-          <div class="asset-icon">📖</div>
-          <div class="asset-name">Rulebook</div>
-          <div class="asset-desc">Full rules for the current version of the prototype.</div>
-          <div class="asset-link">Download PDF →</div>
-        </a>
-
-        <a href="../index.html#contact" class="asset-card">
-          <div class="asset-icon">✉️</div>
-          <div class="asset-name">Request a Demo</div>
-          <div class="asset-desc">Interested in playing Superfan Convention? Get in touch to arrange a session.</div>
-          <div class="asset-link">Contact Dean →</div>
-        </a>
-
-      </div>
-    </div>
   </div>
 
-  <!-- ── Playtest Signup ── -->
   <section class="signup-section">
     <div class="container">
       <div class="signup-inner">
@@ -194,11 +202,9 @@
           action="https://wombatgamefactory.us22.list-manage.com/subscribe/post?u=bc31d542d3f5435ad5c8b24b7&id=33f5681f5c" 
           method="post" 
           target="_blank">
-          <!-- Bot trap - do not remove -->
           <div style="position:absolute; left:-5000px;" aria-hidden="true">
             <input type="text" name="b_bc31d542d3f5435ad5c8b24b7_33f5681f5c" tabindex="-1" value="">
           </div>
-          <!-- Kentia tag -->
           <input type="hidden" name="tags" value="334">
           <input type="email" name="EMAIL" placeholder="Your email address" required>
           <button type="submit" class="btn btn-primary">Notify Me</button>
@@ -214,12 +220,20 @@
         <ul class="footer-links">
           <li><a href="https://instagram.com/wombatgamefactory" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://youtube.com/@wombatgamefactory" target="_blank" rel="noopener">YouTube</a></li>
-          <li><a href="#" target="_blank" rel="noopener">BoardGameGeek</a></li>
+          <li><a href="https://boardgamegeek.com/boardgamedesigner/123443/dean-morris" target="_blank" rel="noopener">BoardGameGeek</a></li>
         </ul>
         <div class="footer-copy">© 2026 Dean Morris / Wombat Game Factory</div>
       </div>
     </div>
   </footer>
+
+  <script>
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: false
+    });
+  </script>
 
 </body>
 </html>

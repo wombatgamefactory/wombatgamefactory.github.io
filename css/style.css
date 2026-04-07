@@ -412,6 +412,56 @@ p { margin-bottom: 1rem; }
 /* ── BGG / Publisher links ── */
 .external-links { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; }
 
+/* ── Publisher Quick Links (left column on game pages) ── */
+.game-logo-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.publisher-quick-links {
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  padding: 1.25rem;
+}
+.publisher-quick-links h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: 1rem;
+}
+.quick-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.2s;
+  font-size: 0.9rem;
+}
+.quick-link:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.quick-link:hover { color: var(--copper-light); }
+.quick-link-icon { font-size: 1.1rem; flex-shrink: 0; }
+.quick-link-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cream);
+}
+.quick-link:hover .quick-link-label { color: var(--copper-light); }
+.quick-link-arrow {
+  margin-left: auto;
+  color: var(--copper);
+  font-size: 0.8rem;
+}
+
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .game-hero-inner { grid-template-columns: 1fr; }

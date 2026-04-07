@@ -25,22 +25,22 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
   <link rel="stylesheet" href="../css/style.css">
+
+  <!-- GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
   <!-- Start cookieyes banner -->
-  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/b4b72588ac323168ef2bca929b5e5cd9/script.js"></script> 
-  <!-- Start cookieyes banner -->
-  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/b4b72588ac323168ef2bca929b5e5cd9/script.js"></script> 
-  <!-- End cookieyes banner -->    
+  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/b4b72588ac323168ef2bca929b5e5cd9/script.js"></script>
+  <!-- End cookieyes banner -->
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNNQF917JJ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-FNNQF917JJ');
   </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 </head>
 <body>
 
@@ -69,15 +69,37 @@
     </div>
   </div>
 
-  <!-- ── Game Hero ── -->
   <section class="game-hero">
     <div class="container">
       <div class="game-hero-inner">
 
-        <div class="game-logo-box">
-          <img src="../images/acacia_logo_main.jpg" alt="Acacia logo">
+        <!-- Left column: logo + publisher resources -->
+        <div class="game-logo-column">
+          <div class="game-logo-box">
+            <img src="../images/acacia_logo_main.jpg" alt="Acacia logo">
+          </div>
+
+          <div class="publisher-quick-links">
+            <h4>Publisher Resources</h4>
+            <a href="../files/acacia_sell_sheet.pdf" class="quick-link" target="_blank" rel="noopener">
+              <span class="quick-link-icon">📄</span>
+              <span class="quick-link-label">Sell Sheet</span>
+              <span class="quick-link-arrow">↓</span>
+            </a>
+            <a href="../files/acacia_rule_book.pdf" class="quick-link" target="_blank" rel="noopener">
+              <span class="quick-link-icon">📖</span>
+              <span class="quick-link-label">Rulebook</span>
+              <span class="quick-link-arrow">↓</span>
+            </a>
+            <a href="../index.html#contact" class="quick-link">
+              <span class="quick-link-icon">✉️</span>
+              <span class="quick-link-label">Request a Demo</span>
+              <span class="quick-link-arrow">→</span>
+            </a>
+          </div>
         </div>
 
+        <!-- Right column: game info -->
         <div class="game-info">
           <div class="game-info-header">
             <h1 class="game-page-title">Acacia</h1>
@@ -92,7 +114,7 @@
             </div>
             <div class="game-stat">
               <span class="game-stat-label">Play Time</span>
-              <span class="game-stat-value">15-30 Min</span>
+              <span class="game-stat-value">15–30 Min</span>
             </div>
             <div class="game-stat">
               <span class="game-stat-label">Age</span>
@@ -109,28 +131,59 @@
           </div>
 
           <p class="game-description-full">
-            In a towering Acacia tree, owls and squirrels are locked in a territorial battle for the hollows — the most prized real estate in the forest. Each turn you place a creature, claim space, and threaten your opponent's position. But in Acacia, the board doesn't just fill up — it fights back. Eject your rival's pieces with a well-placed talon or acorn, and the whole dynamic shifts in an instant.</p>
-            At its core, Acacia is a placement and ejection game on an 6x6 grid. Players win by achieving four-in-a-row. The ejection mechanic is where the game earns its teeth: you can push unprotected pieces off the board, but replacing lost pieces carries a real economic cost, meaning every ejection is a calculated gamble rather than a reflex. That single design decision — making replacement painful — transforms what could be a chaotic back-and-forth into a tense, strategic arms race.</p>
-            What makes Acacia stand out to a publisher is the combination of a short rules explanation and genuine strategic depth. It sits in the same family as Connect Four, but adds a layer of tactical aggression that the original does not offer. At a BGG weight of around 2.5, it's accessible enough for families but substantial enough to satisfy the abstract strategy crowd.</p>
-            Acacia is designed for players who love the clarity of Connect Four but want a game that rewards deeper thinking — fans of Chess, Go, Hex, and TwixT who are looking for something new they can teach in five minutes and analyse for years.</p>
+            In a towering Acacia tree, owls and squirrels are locked in a territorial battle for the hollows — the most prized real estate in the forest. Each turn you place a creature, claim space, and threaten your opponent's position. But in Acacia, the board doesn't just fill up — it fights back. Eject your rival's pieces with a well-placed talon or acorn, and the whole dynamic shifts in an instant.
           </p>
+          <p class="game-description-full">
+            At its core, Acacia is a placement and ejection game on a 6×6 grid. Players win by achieving four-in-a-row. The ejection mechanic is where the game earns its teeth: you can push unprotected pieces off the board, but replacing lost pieces carries a real economic cost, meaning every ejection is a calculated gamble rather than a reflex. That single design decision — making replacement painful — transforms what could be a chaotic back-and-forth into a tense, strategic arms race.
+          </p>
+          <p class="game-description-full">
+            What makes Acacia stand out to a publisher is the combination of a short rules explanation and genuine strategic depth. It sits in the same family as Connect Four, but adds a layer of tactical aggression that the original does not offer. At a BGG weight of around 2.5, it's accessible enough for families but substantial enough to satisfy the abstract strategy crowd.
+          </p>
+          <p class="game-description-full">
+            Acacia is designed for players who love the clarity of Connect Four but want a game that rewards deeper thinking — fans of Chess, Go, Hex, and TwixT who are looking for something new they can teach in five minutes and analyse for years.
+          </p>
+
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ── Photos ── -->
   <div class="container">
     <div class="page-section">
       <h3>Prototype in Play</h3>
       <div class="photos-grid">
-        <div class="photo-cell"><a href="../images/acacia_game_01.jpg" class="glightbox" data-gallery="acacia-gallery"><img src="../images/acacia_game_01.jpg" alt="Acacia prototype"></a></div>
-        <div class="photo-cell"><a href="../images/acacia_game_02.jpg" class="glightbox" data-gallery="acacia-gallery"><img src="../images/acacia_game_02.jpg" alt="Acacia prototype"></a></div>
-        <div class="photo-cell"><a href="../images/acacia_game_03.jpg" class="glightbox" data-gallery="acacia-gallery"><img src="../images/acacia_game_03.jpg" alt="Acacia prototype"></a></div>
-        <div class="photo-cell"><a href="../images/acacia_game_04.jpg" class="glightbox" data-gallery="acacia-gallery"><img src="../images/acacia_game_04.jpg" alt="Acacia prototype"></a></div>
-        <div class="photo-cell"><a href="../images/acacia_game_05.jpg" class="glightbox" data-gallery="acacia-gallery"><img src="../images/acacia_game_05.jpg" alt="Acacia prototype"></a></div>
-        <div class="photo-cell"><a href="../images/acacia_game_06.jpg" class="glightbox" data-gallery="acacia-gallery"><img src="../images/acacia_game_06.jpg" alt="Acacia prototype"></a></div>
+        <div class="photo-cell">
+          <a href="../images/acacia_game_01.jpg" class="glightbox" data-gallery="acacia-gallery" data-description="Acacia prototype in play">
+            <img src="../images/acacia_game_01.jpg" alt="Acacia prototype">
+          </a>
+        </div>
+        <div class="photo-cell">
+          <a href="../images/acacia_game_02.jpg" class="glightbox" data-gallery="acacia-gallery" data-description="Acacia prototype in play">
+            <img src="../images/acacia_game_02.jpg" alt="Acacia prototype">
+          </a>
+        </div>
+        <div class="photo-cell">
+          <a href="../images/acacia_game_03.jpg" class="glightbox" data-gallery="acacia-gallery" data-description="Acacia prototype in play">
+            <img src="../images/acacia_game_03.jpg" alt="Acacia prototype">
+          </a>
+        </div>
+        <div class="photo-cell">
+          <a href="../images/acacia_game_04.jpg" class="glightbox" data-gallery="acacia-gallery" data-description="Acacia prototype in play">
+            <img src="../images/acacia_game_04.jpg" alt="Acacia prototype">
+          </a>
+        </div>
+        <div class="photo-cell">
+          <a href="../images/acacia_game_05.jpg" class="glightbox" data-gallery="acacia-gallery" data-description="Acacia prototype in play">
+            <img src="../images/acacia_game_05.jpg" alt="Acacia prototype">
+          </a>
+        </div>
+        <div class="photo-cell">
+          <a href="../images/acacia_game_06.jpg" class="glightbox" data-gallery="acacia-gallery" data-description="Acacia prototype in play">
+            <img src="../images/acacia_game_06.jpg" alt="Acacia prototype">
+          </a>
+        </div>
+      </div>
     </div>
 
     <!-- ── Video ── -->
@@ -140,37 +193,6 @@
         <iframe src="https://www.youtube.com/embed/qOE-BC-Wv_A" title="Acacia gameplay video"
           frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <!-- ── Assets ── -->
-    <div class="page-section">
-      <h3>Publisher Resources</h3>
-      <div class="assets-grid">
-
-        <a href="../files/acacia_sell_sheet.pdf" class="asset-card" target="_blank" rel="noopener">
-          <!-- Replace # with your Google Drive sell sheet URL -->
-          <div class="asset-icon">📄</div>
-          <div class="asset-name">Sell Sheet</div>
-          <div class="asset-desc">One-page overview of the game for publishers.</div>
-          <div class="asset-link">Download PDF →</div>
-        </a>
-
-        <a href="../files/acacia_rule_book.pdf" class="asset-card" target="_blank" rel="noopener">
-          <!-- Replace # with your Google Drive rulebook URL -->
-          <div class="asset-icon">📖</div>
-          <div class="asset-name">Rulebook</div>
-          <div class="asset-desc">Full rules for the current version of the prototype.</div>
-          <div class="asset-link">Download PDF →</div>
-        </a>
-
-        <a href="../index.html#contact" class="asset-card">
-          <div class="asset-icon">✉️</div>
-          <div class="asset-name">Request a Demo</div>
-          <div class="asset-desc">Interested in playing Acacia? Get in touch to arrange a session.</div>
-          <div class="asset-link">Contact Dean →</div>
-        </a>
-
       </div>
     </div>
   </div>
@@ -184,7 +206,10 @@
           Sign up to be notified when Acacia is available for public playtesting
           at conventions, or when it finds a publisher.
         </p>
-        <form class="signup-form" action="https://wombatgamefactory.us22.list-manage.com/subscribe/post?u=bc31d542d3f5435ad5c8b24b7&id=33f5681f5c&f_id=00a4c2e1f0" method="post" target="_blank">
+        <form class="signup-form"
+          action="https://wombatgamefactory.us22.list-manage.com/subscribe/post?u=bc31d542d3f5435ad5c8b24b7&id=33f5681f5c"
+          method="post"
+          target="_blank">
           <!-- Bot trap - do not remove -->
           <div style="position:absolute; left:-5000px;" aria-hidden="true">
             <input type="text" name="b_bc31d542d3f5435ad5c8b24b7_33f5681f5c" tabindex="-1" value="">
@@ -205,13 +230,14 @@
         <ul class="footer-links">
           <li><a href="https://instagram.com/wombatgamefactory" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://youtube.com/@wombatgamefactory" target="_blank" rel="noopener">YouTube</a></li>
-          <li><a href="#" target="_blank" rel="noopener">BoardGameGeek</a></li>
+          <li><a href="https://boardgamegeek.com/boardgamedesigner/123443/dean-morris" target="_blank" rel="noopener">BoardGameGeek</a></li>
         </ul>
         <div class="footer-copy">© 2026 Dean Morris / Wombat Game Factory</div>
       </div>
     </div>
   </footer>
 
+  <!-- Initialise GLightbox -->
   <script>
     const lightbox = GLightbox({
       touchNavigation: true,
