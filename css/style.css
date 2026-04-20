@@ -127,33 +127,27 @@ p { margin-bottom: 1rem; }
 
 /* ── Bio Section ── */
 .bio-section {
-  padding: 5rem 0;
+  padding: 3rem 0;
   background: var(--bg-mid);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
 .bio-inner {
-  display: grid; grid-template-columns: 2fr 1fr;
-  gap: 4rem; align-items: start;
+  display: flex; flex-direction: column; gap: 1.5rem;
 }
 .section-eyebrow {
   font-family: 'Oswald', sans-serif; font-size: 0.7rem;
   letter-spacing: 0.28em; text-transform: uppercase;
   color: var(--copper); margin-bottom: 0.6rem;
 }
-.bio-text h2 { margin-bottom: 1.5rem; }
+.bio-text h2 { margin-bottom: 0.75rem; }
 .bio-text p { color: var(--text); font-size: 1.05rem; }
 
-.contact-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  padding: 2rem;
+.contact-row {
+  display: flex; flex-wrap: wrap; gap: 0.5rem 2.5rem;
+  padding-top: 1rem; border-top: 1px solid var(--border);
 }
-.contact-card h3 {
-  font-size: 0.78rem; letter-spacing: 0.22em;
-  color: var(--copper); margin-bottom: 1.75rem;
-}
-.contact-item { margin-bottom: 1.25rem; }
+.contact-item { margin-bottom: 0; }
 .contact-label {
   display: block; font-family: 'Oswald', sans-serif;
   font-size: 0.62rem; letter-spacing: 0.2em;
@@ -476,7 +470,8 @@ p { margin-bottom: 1rem; }
   .game-logo-box { min-height: 160px; }
 }
 @media (max-width: 768px) {
-  .hero-inner, .bio-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .contact-row { gap: 0.5rem 1.5rem; }
   .hero-image { order: -1; }
   .photo-placeholder, .designer-photo { width: 200px; height: 200px; margin: 0 auto; }
   .photos-grid { grid-template-columns: repeat(2, 1fr); }
