@@ -42,6 +42,45 @@
     gtag('config', 'G-FNNQF917JJ');
   </script>
   <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"246df0746358adafd3745b08e93dc646"})});</script>
+
+  <style>
+    /* Compact 3-column photo grid for inline placement */
+    .photos-grid-compact {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .photos-grid-compact .photo-cell {
+      aspect-ratio: 4/3;
+    }
+    /* Compact video at reduced width */
+    .video-compact {
+      max-width: 460px;
+      margin: 0 0 1.5rem 0;
+    }
+    .video-compact .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+    }
+    .video-compact .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+    }
+    @media (max-width: 768px) {
+      .photos-grid-compact {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .video-compact {
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -136,6 +175,50 @@
             </div>
           </div>
 
+          <!-- ── Photos (above description) ── -->
+          <div class="photos-grid-compact">
+            <div class="photo-cell">
+              <a href="../images/acacia_game_01.jpg" class="glightbox" data-gallery="acacia-gallery" data-description="Acacia prototype in play">
+                <img src="../images/acacia_game_01.jpg" alt="Acacia prototype">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/acacia_game_02.jpg" class="glightbox" data-gallery="acacia-gallery" data-description="Acacia prototype in play">
+                <img src="../images/acacia_game_02.jpg" alt="Acacia prototype">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/acacia_game_03.jpg" class="glightbox" data-gallery="acacia-gallery" data-description="Acacia prototype in play">
+                <img src="../images/acacia_game_03.jpg" alt="Acacia prototype">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/acacia_game_04.jpg" class="glightbox" data-gallery="acacia-gallery" data-description="Acacia prototype in play">
+                <img src="../images/acacia_game_04.jpg" alt="Acacia prototype">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/acacia_game_05.jpg" class="glightbox" data-gallery="acacia-gallery" data-description="Acacia prototype in play">
+                <img src="../images/acacia_game_05.jpg" alt="Acacia prototype">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/acacia_game_06.jpg" class="glightbox" data-gallery="acacia-gallery" data-description="Acacia prototype in play">
+                <img src="../images/acacia_game_06.jpg" alt="Acacia prototype">
+              </a>
+            </div>
+          </div>
+
+          <!-- ── Video (above description) ── -->
+          <div class="video-compact">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/5B4wiWJD258" title="Acacia gameplay video"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- ── Description (below images and video) ── -->
           <p class="game-description-full">
             In a towering Acacia tree, owls and squirrels are locked in a territorial battle for the hollows — the most prized real estate in the forest. Each turn you place a creature, claim space, and threaten your opponent's position. But in Acacia, the board doesn't just fill up — it fights back. Eject your rival's pieces with a well-placed talon or acorn, and the whole dynamic shifts in an instant.
           </p>
@@ -154,54 +237,6 @@
       </div>
     </div>
   </section>
-
-  <div class="container">
-    <div class="page-section">
-      <h3>Prototype in Play</h3>
-      <div class="photos-grid">
-        <div class="photo-cell">
-          <a href="../images/acacia_game_01.jpg" class="glightbox" data-gallery="acacia-gallery" data-description="Acacia prototype in play">
-            <img src="../images/acacia_game_01.jpg" alt="Acacia prototype">
-          </a>
-        </div>
-        <div class="photo-cell">
-          <a href="../images/acacia_game_02.jpg" class="glightbox" data-gallery="acacia-gallery" data-description="Acacia prototype in play">
-            <img src="../images/acacia_game_02.jpg" alt="Acacia prototype">
-          </a>
-        </div>
-        <div class="photo-cell">
-          <a href="../images/acacia_game_03.jpg" class="glightbox" data-gallery="acacia-gallery" data-description="Acacia prototype in play">
-            <img src="../images/acacia_game_03.jpg" alt="Acacia prototype">
-          </a>
-        </div>
-        <div class="photo-cell">
-          <a href="../images/acacia_game_04.jpg" class="glightbox" data-gallery="acacia-gallery" data-description="Acacia prototype in play">
-            <img src="../images/acacia_game_04.jpg" alt="Acacia prototype">
-          </a>
-        </div>
-        <div class="photo-cell">
-          <a href="../images/acacia_game_05.jpg" class="glightbox" data-gallery="acacia-gallery" data-description="Acacia prototype in play">
-            <img src="../images/acacia_game_05.jpg" alt="Acacia prototype">
-          </a>
-        </div>
-        <div class="photo-cell">
-          <a href="../images/acacia_game_06.jpg" class="glightbox" data-gallery="acacia-gallery" data-description="Acacia prototype in play">
-            <img src="../images/acacia_game_06.jpg" alt="Acacia prototype">
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── Video ── -->
-    <div class="page-section">
-      <h3>Video</h3>
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/5B4wiWJD258" title="Acacia gameplay video"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
 
   <!-- ── Playtest Signup ── -->
   <section id="signup" class="signup-section">

@@ -42,6 +42,39 @@
     gtag('config', 'G-FNNQF917JJ');
   </script>
   <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"246df0746358adafd3745b08e93dc646"})});</script>
+
+  <style>
+    .photos-grid-compact {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .photos-grid-compact .photo-cell {
+      aspect-ratio: 4/3;
+    }
+    .video-compact {
+      max-width: 460px;
+      margin: 0 0 1.5rem 0;
+    }
+    .video-compact .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+    }
+    .video-compact .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+    }
+    @media (max-width: 768px) {
+      .photos-grid-compact { grid-template-columns: repeat(2, 1fr); }
+      .video-compact { max-width: 100%; }
+    }
+  </style>
 </head>
 <body>
 
@@ -136,6 +169,51 @@
             </div>
           </div>
 
+          <!-- ── Photos (above description) ── -->
+          <div class="photos-grid-compact">
+            <div class="photo-cell">
+              <a href="../images/kentia_game_01.jpg" class="glightbox" data-gallery="kentia-gallery" data-description="Kentia prototype in play">
+                <img src="../images/kentia_game_01.jpg" alt="Kentia prototype in play">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/kentia_game_02.jpg" class="glightbox" data-gallery="kentia-gallery" data-description="Kentia prototype in play">
+                <img src="../images/kentia_game_02.jpg" alt="Kentia prototype in play">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/kentia_game_03.jpg" class="glightbox" data-gallery="kentia-gallery" data-description="Kentia prototype in play">
+                <img src="../images/kentia_game_03.jpg" alt="Kentia prototype in play">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/kentia_game_04.jpg" class="glightbox" data-gallery="kentia-gallery" data-description="Kentia prototype in play">
+                <img src="../images/kentia_game_04.jpg" alt="Kentia prototype in play">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/kentia_game_05.jpg" class="glightbox" data-gallery="kentia-gallery" data-description="Kentia prototype in play">
+                <img src="../images/kentia_game_05.jpg" alt="Kentia prototype in play">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/kentia_game_06.jpg" class="glightbox" data-gallery="kentia-gallery" data-description="Kentia prototype in play">
+                <img src="../images/kentia_game_06.jpg" alt="Kentia prototype in play">
+              </a>
+            </div>
+          </div>
+
+          <!-- ── Video (above description) ── -->
+          <div class="video-compact">
+            <div class="video-placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+              </svg>
+              Video Coming Soon
+            </div>
+          </div>
+
+          <!-- ── Description (below images and video) ── -->
           <p class="game-description-full">
             Kentia is a strategic placement game for 2–4 players set on a lush tropical island. Animals have arrived on the shore and players compete to settle them into thriving communities around towering palm trees. Over the course of roughly 60 minutes, the board transforms into a vivid diorama of colourful animal meeples clustered beneath swaying palms — a table presence designed to rival games like Yamatai and Everdell. But beneath the charm is a sharp spatial puzzle with real teeth.
           </p>
@@ -154,55 +232,6 @@
       </div>
     </div>
   </section>
-
-  <div class="container">
-    <div class="page-section">
-      <h3>Prototype in Play</h3>
-      <div class="photos-grid">
-        <div class="photo-cell">
-          <a href="../images/kentia_game_01.jpg" class="glightbox" data-gallery="kentia-gallery" data-description="Kentia prototype in play">
-            <img src="../images/kentia_game_01.jpg" alt="Kentia prototype in play">
-          </a>
-        </div>
-        <div class="photo-cell">
-          <a href="../images/kentia_game_02.jpg" class="glightbox" data-gallery="kentia-gallery" data-description="Kentia prototype in play">
-            <img src="../images/kentia_game_02.jpg" alt="Kentia prototype in play">
-          </a>
-        </div>
-        <div class="photo-cell">
-          <a href="../images/kentia_game_03.jpg" class="glightbox" data-gallery="kentia-gallery" data-description="Kentia prototype in play">
-            <img src="../images/kentia_game_03.jpg" alt="Kentia prototype in play">
-          </a>
-        </div>
-        <div class="photo-cell">
-          <a href="../images/kentia_game_04.jpg" class="glightbox" data-gallery="kentia-gallery" data-description="Kentia prototype in play">
-            <img src="../images/kentia_game_04.jpg" alt="Kentia prototype in play">
-          </a>
-        </div>
-        <div class="photo-cell">
-          <a href="../images/kentia_game_05.jpg" class="glightbox" data-gallery="kentia-gallery" data-description="Kentia prototype in play">
-            <img src="../images/kentia_game_05.jpg" alt="Kentia prototype in play">
-          </a>
-        </div>
-        <div class="photo-cell">
-          <a href="../images/kentia_game_06.jpg" class="glightbox" data-gallery="kentia-gallery" data-description="Kentia prototype in play">
-            <img src="../images/kentia_game_06.jpg" alt="Kentia prototype in play">
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── Video ── -->
-    <div class="page-section">
-      <h3>Video</h3>
-      <div class="video-placeholder">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
-          <polygon points="5 3 19 12 5 21 5 3"/>
-        </svg>
-        Video Coming Soon
-      </div>
-    </div>
-  </div>
 
   <!-- ── Playtest Signup ── -->
   <section id="signup" class="signup-section">
