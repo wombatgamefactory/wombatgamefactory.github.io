@@ -1,0 +1,28 @@
+# Image files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.svg
+*.ico
+*.bmp
+*.tiff
+
+# Video files
+*.mp4
+*.webm
+*.mov
+*.avi
+*.mkv
+*.flv
+*.m4v
+
+# Build and dependency artifacts
+node_modules/
+.git/
+.github/
+
+# OS files
+.DS_Store
+Thumbs.db
