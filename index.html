@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wombat Game Factory — Board Game Design Studio</title>
-  <meta name="description" content="Independent board game designer Dean Morris. Heavy euros and gateway strategy games. Prototypes with presence. Based in London, UK.">
+  <meta name="description"
+    content="Independent board game designer Dean Morris. Heavy euros and gateway strategy games. Prototypes with presence. Based in London, UK.">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Wombat Game Factory — board games from Dean Morris">
-  <meta property="og:description" content="Independent board game designer Dean Morris. Heavy euros and gateway strategy games. Prototypes with presence. Based in London, UK.">
+  <meta property="og:description"
+    content="Independent board game designer Dean Morris. Heavy euros and gateway strategy games. Prototypes with presence. Based in London, UK.">
   <meta property="og:image" content="https://www.wombatgamefactory.com/images/wombat_game_factory_graph.jpg">
   <meta property="og:url" content="https://www.wombatgamefactory.com">
   <meta property="og:type" content="website">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Wombat Game Factory — board games from Dean Morris">
-  <meta name="twitter:description" content="Independent board game designer Dean Morris. Heavy euros and gateway strategy games. Prototypes with presence.">
+  <meta name="twitter:description"
+    content="Independent board game designer Dean Morris. Heavy euros and gateway strategy games. Prototypes with presence.">
   <meta name="twitter:image" content="https://www.wombatgamefactory.com/images/wombat_game_factory_graph.jpg">
 
   <!-- Favicon -->
@@ -26,50 +30,73 @@
 
   <link rel="stylesheet" href="css/style.css">
   <style>
-    .game-group { margin-bottom: 3.5rem; }
-    .game-group:last-child { margin-bottom: 0; }
+    .game-group {
+      margin-bottom: 3.5rem;
+    }
+
+    .game-group:last-child {
+      margin-bottom: 0;
+    }
+
     .game-group-header {
-      display: flex; align-items: center; gap: 1.25rem;
-      margin-bottom: 1.5rem; padding-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
       border-bottom: 1px solid var(--border);
     }
+
     .game-group-header h3 {
-      font-family: 'Oswald', sans-serif; font-size: 0.8rem; font-weight: 500;
-      letter-spacing: 0.25em; text-transform: uppercase;
-      color: var(--text-muted); white-space: nowrap;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      white-space: nowrap;
     }
+
     .game-group-count {
-      font-family: 'Oswald', sans-serif; font-size: 0.68rem;
-      letter-spacing: 0.15em; color: var(--text-muted); margin-left: auto;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      margin-left: auto;
     }
+
     /* Hero logo - hide on mobile since logo is in nav */
     .hero-logo {
       display: flex;
       align-items: center;
       justify-content: center;
     }
+
     @media (max-width: 768px) {
       .hero-logo {
         display: none;
       }
+
       .hero .hero-inner {
         grid-template-columns: 1fr !important;
       }
     }
   </style>
   <!-- Start cookieyes banner -->
-  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/b4b72588ac323168ef2bca929b5e5cd9/script.js"></script>
+  <script id="cookieyes" type="text/javascript"
+    src="https://cdn-cookieyes.com/client_data/b4b72588ac323168ef2bca929b5e5cd9/script.js"></script>
   <!-- End cookieyes banner -->
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNNQF917JJ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-FNNQF917JJ');
   </script>
-  <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"246df0746358adafd3745b08e93dc646"})});</script>
+  <script>function loadScript(a) { var b = document.getElementsByTagName("head")[0], c = document.createElement("script"); c.type = "text/javascript", c.src = "https://tracker.metricool.com/resources/be.js", c.onreadystatechange = a, c.onload = a, b.appendChild(c) } loadScript(function () { beTracker.t({ hash: "246df0746358adafd3745b08e93dc646" }) });</script>
 </head>
+
 <body>
 
   <nav class="site-nav">
@@ -81,7 +108,8 @@
           <span></span>
         </button>
         <a href="index.html" class="nav-logo">
-          <img src="images/wombat_game_factory_logo_landing.webp" alt="Wombat Game Factory logo" style="height: 32px; vertical-align: middle; margin-right: 0.5rem;">
+          <img src="images/wombat_game_factory_logo_landing.webp" alt="Wombat Game Factory logo"
+            style="height: 32px; vertical-align: middle; margin-right: 0.5rem;">
           Wombat <span>Game Factory</span>
         </a>
         <ul class="nav-links">
@@ -102,7 +130,8 @@
       <div class="hero-inner" style="grid-template-columns: 1fr 1.5fr 1fr;">
 
         <div class="hero-logo">
-          <img src="images/wombat_game_factory_logo_landing.webp" alt="Wombat Game Factory logo" style="max-width: 220px; display: block; margin: 0 auto;">
+          <img src="images/wombat_game_factory_logo_landing.webp" alt="Wombat Game Factory logo"
+            style="max-width: 220px; display: block; margin: 0 auto;">
         </div>
 
         <div class="hero-content">
@@ -112,7 +141,8 @@
             <span class="studio-name">Wombat Game Factory</span>
           </h1>
           <p class="hero-description">
-            Crafting gateway plus and mid-heavy euro strategy games with a focus on spatial puzzles and tactile 3D components. Designed to look inviting on the table, but still pack a satisfyingly crunchy challenge.
+            Crafting gateway plus and mid-heavy euro strategy games with a focus on spatial puzzles and tactile 3D
+            components. Designed to look inviting on the table, but still pack a satisfyingly crunchy challenge.
           </p>
         </div>
 
@@ -130,7 +160,10 @@
         <div class="bio-text">
           <div class="section-eyebrow">About the Designer</div>
           <h2>Dean Morris</h2>
-          <p>I'm an Australian board game designer, living in London, who loves pairing clean mechanics with a great physical presence. I spend a lot of time tinkering with prototypes to ensure the actual gameplay feels as good as the game looks. I'm currently working on a few new ideas and am always keen to connect with publishing partners for a chat.</p>
+          <p>I'm an Australian board game designer, living in London, who loves pairing clean mechanics with a great
+            physical presence. I spend a lot of time tinkering with prototypes to ensure the actual gameplay feels as
+            good as the game looks. I'm currently working on a few new ideas and am always keen to connect with
+            publishing partners for a chat.</p>
         </div>
         <div id="contact" class="contact-row">
           <div class="contact-item">
@@ -143,19 +176,23 @@
           </div>
           <div class="contact-item">
             <span class="contact-label">Instagram</span>
-            <a href="https://instagram.com/wombatgamefactory" class="contact-value" target="_blank" rel="noopener">@wombatgamefactory</a>
+            <a href="https://instagram.com/wombatgamefactory" class="contact-value" target="_blank"
+              rel="noopener">@wombatgamefactory</a>
           </div>
           <div class="contact-item">
             <span class="contact-label">YouTube</span>
-            <a href="https://youtube.com/@wombatgamefactory" class="contact-value" target="_blank" rel="noopener">@wombatgamefactory</a>
+            <a href="https://youtube.com/@wombatgamefactory" class="contact-value" target="_blank"
+              rel="noopener">@wombatgamefactory</a>
           </div>
           <div class="contact-item">
             <span class="contact-label">Bluesky</span>
-            <a href="https://bsky.app/profile/wombatgamefactory.bsky.social" class="contact-value" target="_blank" rel="noopener">@wombatgamefactory</a>
+            <a href="https://bsky.app/profile/wombatgamefactory.bsky.social" class="contact-value" target="_blank"
+              rel="noopener">@wombatgamefactory</a>
           </div>
           <div class="contact-item">
             <span class="contact-label">BoardGameGeek</span>
-            <a href="https://boardgamegeek.com/boardgamedesigner/123443/dean-morris" class="contact-value" target="_blank" rel="noopener">Dean Morris on BGG</a>
+            <a href="https://boardgamegeek.com/boardgamedesigner/123443/dean-morris" class="contact-value"
+              target="_blank" rel="noopener">Dean Morris on BGG</a>
           </div>
         </div>
       </div>
@@ -174,52 +211,57 @@
         <div class="game-group-header">
           <h3>Currently Pitching</h3>
           <span class="badge badge-development">Seeking Publisher</span>
-          <span class="game-group-count">5 titles</span>
+          <span class="game-group-count">4 titles</span>
         </div>
         <div class="games-grid">
 
           <a href="games/acacia.html" class="game-card">
             <div class="game-card-image"><img src="images/acacia_logo_landing.jpg" alt="Acacia"></div>
             <div class="game-card-body">
-              <div class="game-card-header"><span class="game-title">Acacia</span><span class="badge badge-development">Pitching</span></div>
-              <p class="game-description">Push your rivals out, claim the hollows, and connect your creatures — Acacia is a sharp two-player abstract strategy game that takes Connect Four and gives it ruthless consequences.</p>
+              <div class="game-card-header"><span class="game-title">Acacia</span><span
+                  class="badge badge-development">Pitching</span></div>
+              <p class="game-description">Push your rivals out, claim the hollows, and connect your creatures — Acacia
+                is a sharp two-player abstract strategy game that takes Connect Four and gives it ruthless consequences.
+              </p>
               <div class="game-meta"><span>2 Players</span><span>15–30 Min</span><span>Age 6+</span></div>
             </div>
           </a>
 
           <a href="games/firefly-festival.html" class="game-card">
-            <div class="game-card-image"><img src="images/firefly_festival_logo_landing.jpg" alt="Firefly Festival"></div>
+            <div class="game-card-image"><img src="images/firefly_festival_logo_landing.jpg" alt="Firefly Festival">
+            </div>
             <div class="game-card-body">
-              <div class="game-card-header"><span class="game-title">Firefly Festival</span><span class="badge badge-development">Pitching</span></div>
-              <p class="game-description">Firefly Festival is a gateway strategy game for 2–5 players where you build bridges between islands, construct towering pagodas, and compete to host the most spectacular festival celebrations in a beautifully illustrated Japanese garden setting.</p>
+              <div class="game-card-header"><span class="game-title">Firefly Festival</span><span
+                  class="badge badge-development">Pitching</span></div>
+              <p class="game-description">Firefly Festival is a gateway strategy game for 2–5 players where you build
+                bridges between islands, construct towering pagodas, and compete to host the most spectacular festival
+                celebrations in a beautifully illustrated Japanese garden setting.</p>
               <div class="game-meta"><span>2–6 Players</span><span>60–90 Min</span><span>Age 12+</span></div>
             </div>
           </a>
 
-          <a href="games/superfan-convention.html" class="game-card">
-            <div class="game-card-image"><img src="images/superfans_logo_landing.jpg" alt="Superfan Convention"></div>
+          <a href="games/fancy-that.html" class="game-card">
+            <div class="game-card-image"><img src="images/fancy-that_logo_landing.jpg" alt="Fancy That!"></div>
             <div class="game-card-body">
-              <div class="game-card-header"><span class="game-title">Superfan Convention</span><span class="badge badge-development">Pitching</span></div>
-              <p class="game-description">Superfan Convention is a euro-style worker placement game for 2–5 players where rival fan clubs compete to meet celebrities, collect selfies, and out-geek the competition at the world's most chaotic pop culture convention.</p>
-              <div class="game-meta"><span>2–5 Players</span><span>45–75 Min</span><span>Age 12+</span></div>
-            </div>
-          </a>
-
-          <a href="games/kentia.html" class="game-card">
-            <div class="game-card-image"><img src="images/kentia_logo_landing.jpg" alt="Kentia"></div>
-            <div class="game-card-body">
-              <div class="game-card-header"><span class="game-title">Kentia</span><span class="badge badge-development">Pitching</span></div>
-              <p class="game-description">Build settlements of adorable tropical animals around towering palm trees on a sun-drenched island — but on this crowded paradise, every placement is a battle for territory.</p>
-              <div class="game-meta"><span>2–4 Players</span><span>45–60 Min</span><span>Age 12+</span></div>
+              <div class="game-card-header"><span class="game-title">Fancy That!</span><span
+                  class="badge badge-development">Pitching</span></div>
+              <p class="game-description">Set out a spread of fine British patisseries in this cozy tile-placement game.
+                Sweep colourful tiles from the market, build patterns on your board, and claim charming kawaii cake
+                figurines. A game of cakes, patterns & polite ambition. </p>
+              <div class="game-meta"><span>2–4 Players</span><span>30–45 Min</span><span>Age 8+</span></div>
             </div>
           </a>
 
           <a href="games/bucket_list.html" class="game-card">
             <div class="game-card-image"><img src="images/bucket_list_logo_landing.jpg" alt="Bucket List"></div>
             <div class="game-card-body">
-              <div class="game-card-header"><span class="game-title">Bucket List</span><span class="badge badge-development">Pitching</span></div>
-              <p class="game-description">Bucket List is a card drafting game about collecting the places you've visited, the creatures you've spotted, and the wonders you've seen. Every card has a checkbox - tick it off if you've really been there or spotted it in the wild, and watch your personal bucket list grow with every game you play.
-                
+              <div class="game-card-header"><span class="game-title">Bucket List</span><span
+                  class="badge badge-development">Pitching</span></div>
+              <p class="game-description">Bucket List is a card drafting game about collecting the places you've
+                visited, the creatures you've spotted, and the wonders you've seen. Every card has a checkbox - tick it
+                off if you've really been there or spotted it in the wild, and watch your personal bucket list grow with
+                every game you play.
+
               </p>
               <div class="game-meta"><span>2–5 Players</span><span>20 Min</span><span>Age 8+</span></div>
             </div>
@@ -233,16 +275,30 @@
         <div class="game-group-header">
           <h3>In Development</h3>
           <span class="badge badge-development">In Development</span>
-          <span class="game-group-count">1 title</span>
+          <span class="game-group-count">2 titles</span>
         </div>
         <div class="games-grid">
 
-          <a href="games/fancy-that.html" class="game-card">
-            <div class="game-card-image"><img src="images/fancy-that_logo_landing.jpg" alt="Fancy That!"></div>
+          <a href="games/segovia.html" class="game-card">
+            <div class="game-card-image"><img src="images/segovia_landing.jpg" alt="Segovia"></div>
             <div class="game-card-body">
-              <div class="game-card-header"><span class="game-title">Fancy That!</span><span class="badge badge-development">In Development</span></div>
-              <p class="game-description">Set out a spread of fine British patisseries in this cozy tile-placement game. Sweep colourful tiles from the market, build patterns on your board, and claim charming kawaii cake figurines. A game of cakes, patterns & polite ambition. </p>
-              <div class="game-meta"><span>2–4 Players</span><span>30–45 Min</span><span>Age 8+</span></div>
+              <div class="game-card-header"><span class="game-title">Segovia</span><span
+                  class="badge badge-development">In Development</span></div>
+              <p class="game-description">A strategic tile-placement game where players build the iconic aqueduct and
+                cathedral of Segovia through clever hand management and spatial planning.</p>
+              <div class="game-meta"><span>2–4 Players</span><span>45–60 Min</span><span>Age 12+</span></div>
+            </div>
+          </a>
+
+          <a href="games/about-face.html" class="game-card">
+            <div class="game-card-image"><img src="images/about_face_logo_landing.jpg" alt="About Face"></div>
+            <div class="game-card-body">
+              <div class="game-card-header"><span class="game-title">About Face</span><span
+                  class="badge badge-development">In Development</span></div>
+              <p class="game-description">About Face is a trick-taking game where players navigate a map competing to
+                win at one location, then strategically lose at the same spot. A clever game of timing and
+                misdirection.</p>
+              <div class="game-meta"><span>2–4 Players</span><span>30–45 Min</span><span>Age 12+</span></div>
             </div>
           </a>
 
@@ -259,9 +315,16 @@
         <div class="games-grid">
 
           <a href="games/highlands.html" class="game-card">
-            <div class="game-card-image"><div class="game-logo-placeholder"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>Coming Soon</div></div>
+            <div class="game-card-image">
+              <div class="game-logo-placeholder"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1">
+                  <rect x="2" y="7" width="20" height="14" rx="1" />
+                  <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                </svg>Coming Soon</div>
+            </div>
             <div class="game-card-body">
-              <div class="game-card-header"><span class="game-title">Highlands</span><span class="badge badge-signed">Signed</span></div>
+              <div class="game-card-header"><span class="game-title">Highlands</span><span
+                  class="badge badge-signed">Signed</span></div>
               <p class="game-description">A card-driven engine building euro game set in the Scottish highlands.</p>
               <div class="game-meta"><span>2–4 Players</span><span>90–120 Min</span><span>Age 14+</span></div>
             </div>
@@ -282,7 +345,8 @@
           <a href="games/pacific-rails-inc.html" class="game-card">
             <div class="game-card-image"><img src="images/pacific_rails_logo_landing.jpg" alt="Pacific Rails Inc"></div>
             <div class="game-card-body">
-              <div class="game-card-header"><span class="game-title">Pacific Rails Inc.</span><span class="badge badge-published">Published</span></div>
+              <div class="game-card-header"><span class="game-title">Pacific Rails Inc.</span><span
+                  class="badge badge-published">Published</span></div>
               <p class="game-description">Build the Transcontinental railroad in this worker placement network game!</p>
               <div class="game-meta"><span>2–4 Players</span><span>60–90 Min</span><span>Age 14+</span></div>
             </div>
@@ -291,9 +355,43 @@
           <a href="games/florence.html" class="game-card">
             <div class="game-card-image"><img src="images/florence_logo_landing.jpg" alt="Florence"></div>
             <div class="game-card-body">
-              <div class="game-card-header"><span class="game-title">Florence</span><span class="badge badge-published">Published</span></div>
-              <p class="game-description">Woo the Medici in a Euro-style area control game set in Renaissance-era Florence.</p>
+              <div class="game-card-header"><span class="game-title">Florence</span><span
+                  class="badge badge-published">Published</span></div>
+              <p class="game-description">Woo the Medici in a Euro-style area control game set in Renaissance-era
+                Florence.</p>
               <div class="game-meta"><span>1–5 Players</span><span>40–80 Min</span><span>Age 14+</span></div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- ARCHIVE -->
+      <div class="game-group">
+        <div class="game-group-header">
+          <h3>Archive</h3>
+          <span class="game-group-count">2 titles</span>
+        </div>
+        <div class="games-grid">
+
+          <a href="games/superfan-convention.html" class="game-card">
+            <div class="game-card-image"><img src="images/superfans_logo_landing.jpg" alt="Superfan Convention"></div>
+            <div class="game-card-body">
+              <div class="game-card-header"><span class="game-title">Superfan Convention</span></div>
+              <p class="game-description">Superfan Convention is a euro-style worker placement game for 2–5 players
+                where rival fan clubs compete to meet celebrities, collect selfies, and out-geek the competition at the
+                world's most chaotic pop culture convention.</p>
+              <div class="game-meta"><span>2–5 Players</span><span>45–75 Min</span><span>Age 12+</span></div>
+            </div>
+          </a>
+
+          <a href="games/kentia.html" class="game-card">
+            <div class="game-card-image"><img src="images/kentia_logo_landing.jpg" alt="Kentia"></div>
+            <div class="game-card-body">
+              <div class="game-card-header"><span class="game-title">Kentia</span></div>
+              <p class="game-description">Build settlements of adorable tropical animals around towering palm trees on a
+                sun-drenched island — but on this crowded paradise, every placement is a battle for territory.</p>
+              <div class="game-meta"><span>2–4 Players</span><span>45–60 Min</span><span>Age 12+</span></div>
             </div>
           </a>
 
@@ -310,7 +408,8 @@
         <ul class="footer-links">
           <li><a href="https://instagram.com/wombatgamefactory" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://youtube.com/@wombatgamefactory" target="_blank" rel="noopener">YouTube</a></li>
-          <li><a href="https://boardgamegeek.com/boardgamedesigner/123443/dean-morris" target="_blank" rel="noopener">BoardGameGeek</a></li>
+          <li><a href="https://boardgamegeek.com/boardgamedesigner/123443/dean-morris" target="_blank"
+              rel="noopener">BoardGameGeek</a></li>
         </ul>
         <div class="footer-copy">© 2026 Dean Morris / Wombat Game Factory</div>
       </div>
@@ -349,4 +448,5 @@
     });
   </script>
 </body>
+
 </html>
