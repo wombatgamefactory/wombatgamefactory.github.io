@@ -56,8 +56,15 @@
       margin-bottom: 1.5rem;
     }
 
+    /* Match the card art's ratio so the card frames are never cropped */
     .photos-grid-compact .photo-cell {
-      aspect-ratio: 4/3;
+      aspect-ratio: 1039 / 751;
+    }
+
+    .photos-grid-compact .photo-cell img {
+      object-fit: contain;
+      max-width: 100%;
+      max-height: 100%;
     }
 
     @media (max-width: 768px) {
@@ -162,45 +169,42 @@
             </div>
           </div>
 
-          <!-- ── Photos (above description) ── -->
+          <!-- ── Sample cards (above description) ── -->
           <div class="photos-grid-compact">
             <div class="photo-cell">
-              <a href="../images/greener_pastures_game_01.jpg" class="glightbox" data-gallery="greener-pastures-gallery"
-                data-description="Greener Pastures prototype in play">
-                <img src="../images/greener_pastures_game_01.jpg" alt="Greener Pastures prototype in play">
+              <a href="../images/greener-pastures-game-1.jpg" class="glightbox" data-gallery="greener-pastures-gallery"
+                data-description="Mill House — a Wheat building. When harvested: £1 per unharvested FIELD card.">
+                <img src="../images/greener-pastures-game-1.jpg" alt="Mill House, a Wheat building card">
               </a>
             </div>
             <div class="photo-cell">
-              <a href="../images/greener_pastures_game_02.jpg" class="glightbox" data-gallery="greener-pastures-gallery"
-                data-description="A wheat farm mid-game, buildings filling with crop cards">
-                <img src="../images/greener_pastures_game_02.jpg"
-                  alt="A wheat farm mid-game, buildings filling with crop cards">
+              <a href="../images/greener-pastures-game-2.jpg" class="glightbox" data-gallery="greener-pastures-gallery"
+                data-description="The Herb Hive — an Apiary building. You may immediately visit another player's building.">
+                <img src="../images/greener-pastures-game-2.jpg" alt="The Herb Hive, an Apiary building card">
               </a>
             </div>
             <div class="photo-cell">
-              <a href="../images/greener_pastures_game_03.jpg" class="glightbox" data-gallery="greener-pastures-gallery"
-                data-description="The shared island, with workers claiming delivery spaces">
-                <img src="../images/greener_pastures_game_03.jpg"
-                  alt="The shared island, with workers claiming delivery spaces">
+              <a href="../images/greener-pastures-game-3.jpg" class="glightbox" data-gallery="greener-pastures-gallery"
+                data-description="The Grand Creamery — a Dairy building. Build with a discount of 1 for every Dairy building you have built.">
+                <img src="../images/greener-pastures-game-3.jpg" alt="The Grand Creamery, a Dairy building card">
               </a>
             </div>
             <div class="photo-cell">
-              <a href="../images/greener_pastures_game_04.jpg" class="glightbox" data-gallery="greener-pastures-gallery"
-                data-description="An orchard farm laid out across the table">
-                <img src="../images/greener_pastures_game_04.jpg" alt="An orchard farm laid out across the table">
+              <a href="../images/greener-pastures-game-4.jpg" class="glightbox" data-gallery="greener-pastures-gallery"
+                data-description="Helping Hand — an Orchard power card. When your VISIT fills a neighbour's building, take the placed card's visit action again.">
+                <img src="../images/greener-pastures-game-4.jpg" alt="Helping Hand, an Orchard power card">
               </a>
             </div>
             <div class="photo-cell">
-              <a href="../images/greener_pastures_game_05.jpg" class="glightbox" data-gallery="greener-pastures-gallery"
-                data-description="Hired worker cards, one per suit">
-                <img src="../images/greener_pastures_game_05.jpg" alt="Hired worker cards, one per suit">
+              <a href="../images/greener-pastures-game-5.jpg" class="glightbox" data-gallery="greener-pastures-gallery"
+                data-description="The Grand Marketplace — a Vegetable building. Deliver up to 4 cards.">
+                <img src="../images/greener-pastures-game-5.jpg" alt="The Grand Marketplace, a Vegetable building card">
               </a>
             </div>
             <div class="photo-cell">
-              <a href="../images/greener_pastures_game_06.jpg" class="glightbox" data-gallery="greener-pastures-gallery"
-                data-description="Buildings, reference cards and coins during a playtest">
-                <img src="../images/greener_pastures_game_06.jpg"
-                  alt="Buildings, reference cards and coins during a playtest">
+              <a href="../images/greener-pastures-game-6.jpg" class="glightbox" data-gallery="greener-pastures-gallery"
+                data-description="The Prosperity Wagon — a Dairy building. Build at a discount of 1, then sow a spent card onto a neighbour's building to gain £1.">
+                <img src="../images/greener-pastures-game-6.jpg" alt="The Prosperity Wagon, a Dairy building card">
               </a>
             </div>
           </div>
