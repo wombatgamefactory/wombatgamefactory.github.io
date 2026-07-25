@@ -277,11 +277,32 @@ p { margin-bottom: 1rem; }
   line-height: 1.6; flex: 1; margin-bottom: 1rem;
 }
 .game-meta {
-  display: flex; gap: 1.25rem; flex-wrap: wrap;
+  display: flex; gap: 1.25rem; flex-wrap: wrap; align-items: center;
   font-family: 'Oswald', sans-serif; font-size: 0.68rem;
   letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted);
   border-top: 1px solid var(--border); padding-top: 1rem; margin-top: auto;
 }
+
+/* Whole-card click target, so a card can hold its own nested links */
+.game-card { position: relative; }
+.game-card-link { position: absolute; inset: 0; z-index: 1; }
+
+/* Prominent full-width "Play Online" bar, sits below the card's meta row */
+.play-online-link {
+  position: relative; z-index: 2;
+  display: flex; align-items: center; justify-content: center; gap: 0.55rem;
+  width: 100%; margin-top: 1rem; padding: 0.8rem 1rem;
+  font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  background: var(--copper); border: 1px solid var(--copper);
+  color: var(--bg-dark); text-decoration: none; transition: all 0.2s;
+}
+.play-online-link:hover {
+  background: var(--copper-light); border-color: var(--copper-light);
+  color: var(--bg-dark); box-shadow: 0 0 16px 0 rgba(224,144,96,0.3);
+}
+.play-online-link-icon { font-size: 1rem; line-height: 1; }
+.play-online-link-arrow { font-size: 0.85rem; }
 
 /* ── Badges ── */
 .badge {
@@ -383,6 +404,7 @@ p { margin-bottom: 1rem; }
   letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted);
 }
 .game-stat-value { font-family: 'Oswald', sans-serif; font-size: 1.05rem; color: var(--cream); }
+
 .game-description-full { font-size: 1.05rem; line-height: 1.85; color: var(--text); }
 
 /* ── Page Sections ── */
@@ -520,6 +542,22 @@ p { margin-bottom: 1rem; }
   padding-bottom: 0;
 }
 .quick-link:hover { color: var(--copper-light); }
+
+/* Emphasised quick link (Play Online) — same row, louder treatment */
+.quick-link-primary {
+  background: var(--copper); border: 1px solid var(--copper);
+  padding: 0.8rem 0.75rem; margin: 0.35rem 0;
+}
+.quick-link-primary:hover {
+  background: var(--copper-light); border-color: var(--copper-light);
+}
+.quick-link-primary .quick-link-label,
+.quick-link-primary .quick-link-arrow,
+.quick-link-primary:hover .quick-link-label { color: var(--bg-dark); }
+/* Tightened so the longer label stays on one line in the 280px column */
+.quick-link-primary .quick-link-label { font-size: 0.68rem; letter-spacing: 0.04em; white-space: nowrap; }
+.quick-link-primary .quick-link-icon { font-size: 1rem; }
+.quick-link-primary:last-child { padding-bottom: 0.8rem; }
 .quick-link-icon { font-size: 1.1rem; flex-shrink: 0; }
 .quick-link-label {
   font-family: 'Oswald', sans-serif;
