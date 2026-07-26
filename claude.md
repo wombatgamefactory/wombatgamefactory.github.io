@@ -122,7 +122,7 @@ Footer on every page: links to Instagram, YouTube, BoardGameGeek (Dean's designe
 
 ## External Accounts & Links
 - **Domain**: `www.wombatgamefactory.com` (GitHub Pages custom domain, HTTPS enabled)
-- **Email**: `hello@wombatgamefactory.com` (routed via Cloudflare Email Routing → personal Gmail)
+- **Email**: `dean@wombatgamefactory.com` (routed via Cloudflare Email Routing → personal Gmail)
 - **GitHub**: Wombat Game Factory organisation account
 - **Instagram**: instagram.com/wombatgamefactory
 - **YouTube**: youtube.com/@wombatgamefactory

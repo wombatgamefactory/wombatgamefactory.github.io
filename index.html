@@ -4,22 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wombat Game Factory - Board Game Design Studio</title>
+  <title>Dean Morris - Board Game Designer | Wombat Game Factory</title>
   <meta name="description"
-    content="Independent board game designer Dean Morris. Heavy euros and gateway strategy games. Prototypes with presence. Based in London, UK.">
+    content="Dean Morris designs gateway-plus and mid-weight euro games built around spatial puzzles and tactile 3D components. Designer of Pacific Rails Inc. and Florence.">
+  <meta name="author" content="Dean Morris">
+  <link rel="canonical" href="https://www.wombatgamefactory.com/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Wombat Game Factory - board games from Dean Morris">
+  <meta property="og:title" content="Dean Morris - Board Game Designer">
   <meta property="og:description"
-    content="Independent board game designer Dean Morris. Heavy euros and gateway strategy games. Prototypes with presence. Based in London, UK.">
+    content="Gateway-plus and mid-weight euro games built around spatial puzzles and tactile 3D components. Prototypes seeking publishers: sell sheets, rules and browser demos.">
   <meta property="og:image" content="https://www.wombatgamefactory.com/images/wombat_game_factory_graph.jpg">
-  <meta property="og:url" content="https://www.wombatgamefactory.com">
+  <meta property="og:image:alt" content="Wombat Game Factory - board games designed by Dean Morris">
+  <meta property="og:url" content="https://www.wombatgamefactory.com/">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Wombat Game Factory">
+  <meta property="og:locale" content="en_GB">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Wombat Game Factory - board games from Dean Morris">
+  <meta name="twitter:title" content="Dean Morris - Board Game Designer">
   <meta name="twitter:description"
-    content="Independent board game designer Dean Morris. Heavy euros and gateway strategy games. Prototypes with presence.">
+    content="Gateway-plus and mid-weight euro games built around spatial puzzles and tactile 3D components. Prototypes seeking publishers: sell sheets, rules and browser demos.">
   <meta name="twitter:image" content="https://www.wombatgamefactory.com/images/wombat_game_factory_graph.jpg">
 
   <!-- Favicon -->
@@ -29,59 +34,38 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .game-group {
-      margin-bottom: 3.5rem;
-    }
 
-    .game-group:last-child {
-      margin-bottom: 0;
-    }
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dean Morris",
+    "jobTitle": "Board Game Designer",
+    "description": "Designer of gateway-plus and mid-weight euro board games built around spatial puzzles and tactile 3D components.",
+    "url": "https://www.wombatgamefactory.com/",
+    "image": "https://www.wombatgamefactory.com/images/dean_photo.jpg",
+    "email": "mailto:dean@wombatgamefactory.com",
+    "nationality": "Australian",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "London",
+      "addressCountry": "GB"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Wombat Game Factory",
+      "url": "https://www.wombatgamefactory.com/"
+    },
+    "sameAs": [
+      "https://boardgamegeek.com/boardgamedesigner/123443/dean-morris",
+      "https://instagram.com/wombatgamefactory",
+      "https://youtube.com/@wombatgamefactory",
+      "https://bsky.app/profile/wombatgamefactory.bsky.social"
+    ]
+  }
+  </script>
 
-    .game-group-header {
-      display: flex;
-      align-items: center;
-      gap: 1.25rem;
-      margin-bottom: 1.5rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .game-group-header h3 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.8rem;
-      font-weight: 500;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      white-space: nowrap;
-    }
-
-    .game-group-count {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.68rem;
-      letter-spacing: 0.15em;
-      color: var(--text-muted);
-      margin-left: auto;
-    }
-
-    /* Hero logo - hide on mobile since logo is in nav */
-    .hero-logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    @media (max-width: 768px) {
-      .hero-logo {
-        display: none;
-      }
-
-      .hero .hero-inner {
-        grid-template-columns: 1fr !important;
-      }
-    }
-  </style>
   <!-- Start cookieyes banner -->
   <script id="cookieyes" type="text/javascript"
     src="https://cdn-cookieyes.com/client_data/b4b72588ac323168ef2bca929b5e5cd9/script.js"></script>
@@ -108,8 +92,7 @@
           <span></span>
         </button>
         <a href="index.html" class="nav-logo">
-          <img src="images/wombat_game_factory_logo_landing.webp" alt="Wombat Game Factory logo"
-            style="height: 32px; vertical-align: middle; margin-right: 0.5rem;">
+          <img src="images/wombat_game_factory_logo_landing.webp" alt="">
           Wombat <span>Game Factory</span>
         </a>
         <ul class="nav-links">
@@ -121,80 +104,61 @@
       <div class="nav-menu" id="navMenu">
         <a href="#about" class="nav-menu-item">About the Designer</a>
         <a href="#games" class="nav-menu-item">Games Portfolio</a>
+        <a href="#contact" class="nav-menu-item">Contact</a>
       </div>
     </div>
   </nav>
 
-  <section class="hero">
+  <section class="hero" id="about">
     <div class="container">
-      <div class="hero-inner" style="grid-template-columns: 1fr 1.5fr 1fr;">
+      <div class="hero-inner">
 
-        <div class="hero-logo">
-          <img src="images/wombat_game_factory_logo_landing.webp" alt="Wombat Game Factory logo"
-            style="max-width: 220px; display: block; margin: 0 auto;">
+        <div class="hero-image">
+          <img src="images/dean_photo.jpg" alt="Photo of Dean" class="designer-photo">
+          <dl class="hero-contact" id="contact">
+            <dt>Location</dt>
+            <dd>London, United Kingdom</dd>
+
+            <dt>Email</dt>
+            <dd><a href="mailto:dean@wombatgamefactory.com">dean@wombatgamefactory.com</a></dd>
+
+            <dt>Instagram</dt>
+            <dd><a href="https://instagram.com/wombatgamefactory" target="_blank"
+                rel="noopener">@wombatgamefactory</a></dd>
+
+            <dt>YouTube</dt>
+            <dd><a href="https://youtube.com/@wombatgamefactory" target="_blank"
+                rel="noopener">@wombatgamefactory</a></dd>
+
+            <dt>Bluesky</dt>
+            <dd><a href="https://bsky.app/profile/wombatgamefactory.bsky.social" target="_blank"
+                rel="noopener">@wombatgamefactory</a></dd>
+
+            <dt>BoardGameGeek</dt>
+            <dd><a href="https://boardgamegeek.com/boardgamedesigner/123443/dean-morris" target="_blank"
+                rel="noopener">Dean Morris on BGG</a></dd>
+          </dl>
         </div>
 
         <div class="hero-content">
           <div class="hero-eyebrow">Strategy Board Game Designer</div>
-          <h1 class="hero-title">
-            Dean Morris
-            <span class="studio-name">Wombat Game Factory</span>
-          </h1>
+          <h1 class="hero-title">Dean Morris</h1>
           <p class="hero-description">
-            Crafting gateway plus and mid-heavy euro strategy games with a focus on spatial puzzles and tactile 3D
-            components. Designed to look inviting on the table, but still pack a satisfyingly crunchy challenge.
+            I design gateway-plus and mid-weight euro games built around spatial puzzles. Most build upward as well as
+            outward, using tactile 3D components to give them real presence on the table: games that pull people over to
+            watch, and reward them when they sit down.
+          </p>
+          <p class="hero-description">
+            Pacific Rails Inc. and Florence are published, and Highlands goes to crowdfunding in 2027. Everything else
+            is a prototype, and the artwork shown for them is placeholder.
+          </p>
+          <p class="hero-description">
+            Australian, living in London. I'm at UK Games Expo and Essen Spiel every year to pitch in person. Full details of
+            every game are below: sell sheets, rules, links to TTS and videos. Some of them are playable online in your
+            web browser.
           </p>
         </div>
 
-        <div class="hero-image">
-          <img src="images/dean_photo.jpg" alt="Photo of Dean" class="designer-photo">
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="bio-section" id="about">
-    <div class="container">
-      <div class="bio-inner">
-        <div class="bio-text">
-          <div class="section-eyebrow">About the Designer</div>
-          <h2>Dean Morris</h2>
-          <p>I'm an Australian board game designer, living in London, who loves pairing clean mechanics with a great
-            physical presence. I spend a lot of time tinkering with prototypes to ensure the actual gameplay feels as
-            good as the game looks. I'm currently working on a few new ideas and am always keen to connect with
-            publishing partners for a chat.</p>
-        </div>
-        <div id="contact" class="contact-row">
-          <div class="contact-item">
-            <span class="contact-label">Location</span>
-            <span class="contact-value">London, United Kingdom</span>
-          </div>
-          <div class="contact-item">
-            <span class="contact-label">Email</span>
-            <a href="mailto:dean@wombatgamefactory.com" class="contact-value">dean@wombatgamefactory.com</a>
-          </div>
-          <div class="contact-item">
-            <span class="contact-label">Instagram</span>
-            <a href="https://instagram.com/wombatgamefactory" class="contact-value" target="_blank"
-              rel="noopener">@wombatgamefactory</a>
-          </div>
-          <div class="contact-item">
-            <span class="contact-label">YouTube</span>
-            <a href="https://youtube.com/@wombatgamefactory" class="contact-value" target="_blank"
-              rel="noopener">@wombatgamefactory</a>
-          </div>
-          <div class="contact-item">
-            <span class="contact-label">Bluesky</span>
-            <a href="https://bsky.app/profile/wombatgamefactory.bsky.social" class="contact-value" target="_blank"
-              rel="noopener">@wombatgamefactory</a>
-          </div>
-          <div class="contact-item">
-            <span class="contact-label">BoardGameGeek</span>
-            <a href="https://boardgamegeek.com/boardgamedesigner/123443/dean-morris" class="contact-value"
-              target="_blank" rel="noopener">Dean Morris on BGG</a>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -223,7 +187,7 @@
                   class="badge badge-development">Pitching</span></div>
               <p class="game-description">An engine builder where your rivals are the engine. Every farmer grows a
                 single
-                crop, so everyone needs everyone — and every neighbour who visits your farm leaves coins behind. Other
+                crop, so everyone needs everyone - and every neighbour who visits your farm leaves coins behind. Other
                 games ask you to ignore your opponents. This one pays you to use them.</p>
               <div class="game-meta"><span>1–4 Players</span><span>40–60 Min</span><span>Age 10+</span></div>
             </div>
@@ -233,14 +197,14 @@
             <a href="games/acacia.html" class="game-card-link" aria-label="Acacia"></a>
             <div class="game-card-image"><img src="images/acacia_logo_landing.jpg" alt="Acacia"></div>
             <div class="game-card-body">
-              <div class="game-card-header"><span class="game-title">Acacia</span><span
-                  class="badge badge-development">Pitching</span></div>
-              <p class="game-description">Push your rivals out, claim the hollows, and connect your creatures - Acacia
-                is a sharp two-player abstract strategy game that takes Connect Four and gives it ruthless consequences.
-              </p>
+              <div class="game-card-header"><span class="game-title">Acacia <span class="title-aka">- Eject
+                    Four</span></span><span class="badge badge-development">Pitching</span></div>
+              <p class="game-description">Like Connect Four, but you can knock the other player's pieces off the board.
+                Owls and squirrels fight for the hollows of a towering acacia, and every attack is a gamble: replacing
+                what you lose costs you dearly. Teach it in five minutes, analyse it for years.</p>
               <div class="game-meta"><span>2 Players</span><span>15–30 Min</span><span>Age 6+</span></div>
               <a href="https://wombatgamefactory.github.io/acacia-game/" class="play-online-link" target="_blank"
-                rel="noopener"><span class="play-online-link-icon">🎮</span>Play Online in Browser Now<span
+                rel="noopener"><span class="play-online-link-icon">🎮</span>Play Online in Your Browser<span
                   class="play-online-link-arrow">→</span></a>
             </div>
           </div>
@@ -253,12 +217,12 @@
               <div class="game-card-header"><span class="game-title">Firefly Festival</span><span
                   class="badge badge-development">Pitching</span></div>
               <p class="game-description">A route-building game that grows upwards as well as outwards. Span the water
-                with bridges and stack the sky with pagodas — but height must be earned: every tower is a promise your
+                with bridges and stack the sky with pagodas - but height must be earned: every tower is a promise your
                 bridges must keep.</p>
               <div class="game-meta"><span>2–4 Players</span><span>45–60 Min</span><span>Age 10+</span></div>
               <a href="https://wombatgamefactory.github.io/firefly-festival-game/" class="play-online-link"
-                target="_blank" rel="noopener"><span class="play-online-link-icon">🎮</span>Play Online in Browser
-                Now<span class="play-online-link-arrow">→</span></a>
+                target="_blank" rel="noopener"><span class="play-online-link-icon">🎮</span>Play Online in Your
+                Browser<span class="play-online-link-arrow">→</span></a>
             </div>
           </div>
 
@@ -273,7 +237,7 @@
                 plate that never clears away. Serve shrewdly, though and you'll be the one who takes the cake.</p>
               <div class="game-meta"><span>2–4 Players</span><span>45 Min</span><span>Age 10+</span></div>
               <a href="https://wombatgamefactory.github.io/fancy-that-game" class="play-online-link" target="_blank"
-                rel="noopener"><span class="play-online-link-icon">🎮</span>Play Online in Browser Now<span
+                rel="noopener"><span class="play-online-link-icon">🎮</span>Play Online in Your Browser<span
                   class="play-online-link-arrow">→</span></a>
             </div>
           </div>
@@ -287,12 +251,10 @@
               <p class="game-description">Bucket List is a card drafting game about collecting the places you've
                 visited, the creatures you've spotted, and the wonders you've seen. Every card has a checkbox - tick it
                 off if you've really been there or spotted it in the wild, and watch your personal bucket list grow with
-                every game you play.
-
-              </p>
+                every game you play.</p>
               <div class="game-meta"><span>2–5 Players</span><span>20 Min</span><span>Age 8+</span></div>
               <a href="https://wombatgamefactory.github.io/bucket-list-game/" class="play-online-link" target="_blank"
-                rel="noopener"><span class="play-online-link-icon">🎮</span>Play Online in Browser Now<span
+                rel="noopener"><span class="play-online-link-icon">🎮</span>Play Online in Your Browser<span
                   class="play-online-link-arrow">→</span></a>
             </div>
           </div>
