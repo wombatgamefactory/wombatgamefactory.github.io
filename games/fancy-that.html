@@ -59,9 +59,9 @@
       aspect-ratio: 4/3;
     }
 
-    /* Compact video at reduced width */
+    /* Video matches the photo grid width */
     .video-compact {
-      max-width: 460px;
+      width: 100%;
       margin: 0 0 1.5rem 0;
     }
 
@@ -85,10 +85,6 @@
     @media (max-width: 768px) {
       .photos-grid-compact {
         grid-template-columns: repeat(2, 1fr);
-      }
-
-      .video-compact {
-        max-width: 100%;
       }
     }
   </style>
@@ -239,7 +235,17 @@
             </div>
           </div>
 
-          <!-- ── Description (below images) ── -->
+          <!-- ── Video (above description) ── -->
+          <div class="video-compact">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/nYGhjwRu_0w" title="Fancy That! gameplay video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- ── Description (below images and video) ── -->
           <p class="game-description-full">
             At this tea party you fancy everything - but your eyes are bigger than your board. You truly can't have your
             cake and eat it: every treat you serve leaves behind an empty plate that never clears away. Serve shrewdly,

@@ -62,9 +62,9 @@
       aspect-ratio: 4/3;
     }
 
-    /* Compact video at reduced width */
+    /* Video matches the photo grid width */
     .video-compact {
-      max-width: 460px;
+      width: 100%;
       margin: 0 0 1.5rem 0;
     }
 
@@ -88,10 +88,6 @@
     @media (max-width: 768px) {
       .photos-grid-compact {
         grid-template-columns: repeat(2, 1fr);
-      }
-
-      .video-compact {
-        max-width: 100%;
       }
     }
   </style>
