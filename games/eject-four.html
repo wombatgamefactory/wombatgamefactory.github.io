@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eject Four - Wombat Game Factory</title>
+  <meta name="description"
+    content="Eject Four - a two-player strategy game in the Connect Four tradition. Same goal, one new move: you can knock the other player's piece out and take its place. Available to license.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Eject Four - a board game from Dean Morris">
+  <meta property="og:description"
+    content="Four in a row, but you can knock the other player out. A spiritual successor to Connect Four, available to license.">
+  <meta property="og:image" content="https://www.wombatgamefactory.com/images/acacia_logo_graph.jpg">
+  <meta property="og:url" content="https://www.wombatgamefactory.com/games/eject-four.html">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Eject Four - a board game from Dean Morris">
+  <meta name="twitter:description"
+    content="Four in a row, but you can knock the other player out. A spiritual successor to Connect Four, available to license.">
+  <meta name="twitter:image" content="https://www.wombatgamefactory.com/images/acacia_logo_graph.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+  <!-- Start cookieyes banner -->
+  <script id="cookieyes" type="text/javascript"
+    src="https://cdn-cookieyes.com/client_data/b4b72588ac323168ef2bca929b5e5cd9/script.js"></script>
+  <!-- End cookieyes banner -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNNQF917JJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-FNNQF917JJ');
+  </script>
+  <script>function loadScript(a) { var b = document.getElementsByTagName("head")[0], c = document.createElement("script"); c.type = "text/javascript", c.src = "https://tracker.metricool.com/resources/be.js", c.onreadystatechange = a, c.onload = a, b.appendChild(c) } loadScript(function () { beTracker.t({ hash: "246df0746358adafd3745b08e93dc646" }) });</script>
+
+  <style>
+    /* Compact 3-column photo grid for inline placement */
+    .photos-grid-compact {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .photos-grid-compact .photo-cell {
+      aspect-ratio: 4/3;
+    }
+
+    /* Video matches the photo grid width */
+    .video-compact {
+      width: 100%;
+      margin: 0 0 1.5rem 0;
+    }
+
+    .video-compact .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+    }
+
+    .video-compact .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Pitch blocks: how it plays / why it fits */
+    .pitch-block {
+      margin: 2.25rem 0 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .pitch-block h3 {
+      font-size: 1.15rem;
+      letter-spacing: 0.12em;
+      margin-bottom: 1.1rem;
+    }
+
+    .pitch-block ol,
+    .pitch-block ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: pitch;
+    }
+
+    .pitch-block li {
+      position: relative;
+      padding-left: 2.25rem;
+      margin-bottom: 0.85rem;
+      color: var(--text);
+    }
+
+    .pitch-block ol li::before {
+      counter-increment: pitch;
+      content: counter(pitch);
+      position: absolute;
+      left: 0;
+      top: 0.2rem;
+      width: 1.5rem;
+      text-align: center;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.8rem;
+      line-height: 1.5rem;
+      color: var(--ink);
+      background: var(--copper);
+    }
+
+    .pitch-block ul li::before {
+      content: "";
+      position: absolute;
+      left: 0.4rem;
+      top: 0.72rem;
+      width: 0.5rem;
+      height: 0.5rem;
+      background: var(--copper);
+      transform: rotate(45deg);
+    }
+
+    .pitch-block li strong {
+      color: var(--cream);
+      font-family: 'Oswald', sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+    }
+
+    .pitch-note {
+      margin: 2.25rem 0 0;
+      padding: 1.25rem 1.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--copper);
+    }
+
+    .pitch-note p:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      .photos-grid-compact {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="site-nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">Wombat <span>Game Factory</span></a>
+        <ul class="nav-links">
+          <li><a href="../index.html#games">Games</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="../index.html#games">Games</a>
+        <span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-current">Eject Four</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="game-hero">
+    <div class="container">
+      <div class="game-hero-inner">
+
+        <!-- Left column: logo + publisher resources -->
+        <div class="game-logo-column">
+          <div class="game-logo-box">
+            <img src="../images/acacia_logo_main.jpg" alt="Eject Four logo">
+          </div>
+
+          <div class="publisher-quick-links">
+            <h4>Publisher Resources</h4>
+            <a href="../files/acacia_sell_sheet.pdf" class="quick-link" target="_blank" rel="noopener">
+              <span class="quick-link-icon">📄</span>
+              <span class="quick-link-label">Sell Sheet</span>
+              <span class="quick-link-arrow">↓</span>
+            </a>
+            <a href="../files/acacia_rule_book.pdf" class="quick-link" target="_blank" rel="noopener">
+              <span class="quick-link-icon">📖</span>
+              <span class="quick-link-label">Rulebook</span>
+              <span class="quick-link-arrow">↓</span>
+            </a>
+            <a href="https://wombatgamefactory.github.io/acacia-game/" class="quick-link quick-link-primary"
+              target="_blank" rel="noopener">
+              <span class="quick-link-icon">🎮</span>
+              <span class="quick-link-label">Play Online in Your Browser</span>
+              <span class="quick-link-arrow">→</span>
+            </a>
+            <a href="../index.html#contact" class="quick-link">
+              <span class="quick-link-icon">✉️</span>
+              <span class="quick-link-label">Request a Demo</span>
+              <span class="quick-link-arrow">→</span>
+            </a>
+            <a href="#signup" class="quick-link">
+              <span class="quick-link-icon">🔔</span>
+              <span class="quick-link-label">Subscribe</span>
+              <span class="quick-link-arrow">↓</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right column: game info -->
+        <div class="game-info">
+          <div class="game-info-header">
+            <h1 class="game-page-title">Eject Four</h1>
+            <span class="badge badge-development">Available to License</span>
+          </div>
+          <p class="game-tagline">Connect. Eject. Protect.</p>
+
+          <div class="game-stats-bar">
+            <div class="game-stat">
+              <span class="game-stat-label">Players</span>
+              <span class="game-stat-value">2</span>
+            </div>
+            <div class="game-stat">
+              <span class="game-stat-label">Play Time</span>
+              <span class="game-stat-value">15 Min</span>
+            </div>
+            <div class="game-stat">
+              <span class="game-stat-label">Age</span>
+              <span class="game-stat-value">6+</span>
+            </div>
+            <div class="game-stat">
+              <span class="game-stat-label">Teach Time</span>
+              <span class="game-stat-value">1 Min</span>
+            </div>
+            <div class="game-stat">
+              <span class="game-stat-label">Components</span>
+              <span class="game-stat-value">26 Pieces + Frame</span>
+            </div>
+          </div>
+
+          <!-- ── Photos ── -->
+          <div class="photos-grid-compact">
+            <div class="photo-cell">
+              <a href="../images/acacia_game_01.jpg" class="glightbox" data-gallery="eject-four-gallery"
+                data-description="The upright frame and both supplies: eight ordinary pieces, four ejectors and one yellow per player">
+                <img src="../images/acacia_game_01.jpg" alt="Eject Four prototype with both supplies laid out">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/acacia_game_02.jpg" class="glightbox" data-gallery="eject-four-gallery"
+                data-description="Pieces push into the frame from the front, so both players read the same board">
+                <img src="../images/acacia_game_02.jpg" alt="Eject Four prototype in play">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/acacia_game_03.jpg" class="glightbox" data-gallery="eject-four-gallery"
+                data-description="Marked ejector pieces are the only way to remove an ordinary piece">
+                <img src="../images/acacia_game_03.jpg" alt="Eject Four ejector pieces on the frame">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/acacia_game_04.jpg" class="glightbox" data-gallery="eject-four-gallery"
+                data-description="Mid-game: threats build in every direction, not only from the bottom up">
+                <img src="../images/acacia_game_04.jpg" alt="Eject Four mid-game position">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/acacia_game_05.jpg" class="glightbox" data-gallery="eject-four-gallery"
+                data-description="Supplies run down as the game goes on, and an empty supply loses">
+                <img src="../images/acacia_game_05.jpg" alt="Eject Four prototype in the late game">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/acacia_game_06.jpg" class="glightbox" data-gallery="eject-four-gallery"
+                data-description="The 3D printed prototype frame. The underlying geometry is a plain grid and will take any silhouette">
+                <img src="../images/acacia_game_06.jpg" alt="Eject Four prototype frame">
+              </a>
+            </div>
+          </div>
+
+          <!-- ── Videos ── -->
+          <div class="video-compact">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/5B4wiWJD258" title="Eject Four gameplay video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="video-compact">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/Jf6uuSH4GqE" title="Eject Four overview video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- ── Description ── -->
+          <p class="game-description-full">
+            Connect Four has been selling on the same one-line promise since 1974. Get four of yours in a row before
+            the other player gets four of theirs. Eject Four keeps that promise word for word, then adds the move
+            every player has wanted to make since they were six years old: you can knock the other player's piece
+            out and stand in its place.
+          </p>
+          <p class="game-description-full">
+            The reason that is a game and not a mess is that ejecting is rationed. Each player gets thirteen pieces
+            and no more - eight ordinary, four ejectors, and one yellow. Ejectors are the only thing that can remove
+            an ordinary piece. The yellow is the only thing that can remove an ejector, and nothing at all can remove
+            a yellow. Whatever you knock out goes straight back to its owner, so every attack spends a scarce piece
+            of yours to hand them ammunition back. Begin a turn with an empty supply and you lose on the spot.
+            Players work that out in about four turns, stop swinging, and start setting traps.
+          </p>
+          <p class="game-description-full">
+            The teach is one sentence, because most of it is already done: same as Connect Four, but you can knock
+            mine out. Sixty seconds to explain, fifteen minutes to play, and a skill ceiling that keeps climbing long
+            after a six year old has learned to block. It is the rare two-player box a parent and a child can share
+            honestly, and that two adults will still ask for a rematch on.
+          </p>
+
+          <div class="pitch-block">
+            <h3>How It Plays</h3>
+            <ol>
+              <li><strong>Place.</strong> On your turn, put one of your pieces into any empty space touching a piece
+                already on the frame, diagonals included. A neighbour of any colour counts.</li>
+              <li><strong>Or eject.</strong> Instead of placing, spend one of your four ejectors to knock out an
+                opponent's ordinary piece and take that space for yourself.</li>
+              <li><strong>Break an ejector.</strong> Spend your single yellow piece to knock out an opponent's
+                ejector. Yellow pieces can never be ejected by anyone and count towards nobody's line, so they stay
+                on the frame as permanent blockers.</li>
+              <li><strong>Give it back.</strong> Every ejected piece returns to its owner's supply. Attacking always
+                costs you more than it costs them.</li>
+              <li><strong>Win.</strong> Four of your pieces in a row wins immediately, in any direction, ordinary and
+                ejector pieces mixed freely. Start a turn with nothing left in your supply and you lose.</li>
+            </ol>
+          </div>
+
+          <div class="pitch-block">
+            <h3>Why It Belongs On That Shelf</h3>
+            <ul>
+              <li><strong>Nothing to teach.</strong> The win condition is the win condition a shopper already knows,
+                so the box does the explaining and the new rule fits on the back panel.</li>
+              <li><strong>One new move.</strong> Everything else is a rule the buyer learned decades ago. The whole
+                design is a single addition, carefully priced.</li>
+              <li><strong>Two players, ages 6+, fifteen minutes.</strong> Parent and child, or two adults, out of the
+                same box, with a genuine handicap built into the supply if you want one.</li>
+              <li><strong>No language on any component.</strong> Twenty-six pieces and a frame. One worldwide
+                artwork, translation limited to the leaflet.</li>
+              <li><strong>Low bill of materials.</strong> Two player colours plus yellow, three piece sculpts, one
+                frame, one leaflet. Everything moulds.</li>
+              <li><strong>Built as a line, not a box.</strong> Frame size, supply size and eject cost all tune
+                independently, and have been tested across 6x6, 7x7 and 8x8 grids. That supports a travel edition, a
+                standard edition and a deluxe or licensed edition off one rules set.</li>
+              <li><strong>Frame shape is free.</strong> The prototype is 3D printed as a tree, but the geometry
+                underneath is a plain grid and will take whatever silhouette a brand team wants.</li>
+              <li><strong>Ready now.</strong> Rules are settled and playtested, a physical prototype exists, and a
+                free browser version runs with no install for remote evaluation.</li>
+            </ul>
+          </div>
+
+          <div class="pitch-note">
+            <p>
+              Eject Four is unpublished and unencumbered, and is offered for licence. Dean Morris is a London-based
+              designer with three published titles. A prototype can be shipped, or demonstrated in person in the UK
+              or at a convention. Get in touch at
+              <a href="mailto:dean@wombatgamefactory.com">dean@wombatgamefactory.com</a>.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Playtest Signup ── -->
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="signup-inner">
+        <h3>Stay in the Loop</h3>
+        <p>
+          Sign up to be notified when Eject Four is available for public playtesting
+          at conventions, or when it finds a publisher.
+        </p>
+        <form class="signup-form"
+          action="https://wombatgamefactory.us22.list-manage.com/subscribe/post?u=bc31d542d3f5435ad5c8b24b7&id=33f5681f5c"
+          method="post" target="_blank">
+          <!-- Bot trap - do not remove -->
+          <div style="position:absolute; left:-5000px;" aria-hidden="true">
+            <input type="text" name="b_bc31d542d3f5435ad5c8b24b7_33f5681f5c" tabindex="-1" value="">
+          </div>
+          <!-- Eject Four (Acacia) tag -->
+          <input type="hidden" name="tags" value="332">
+          <input type="email" name="EMAIL" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-primary">Notify Me</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="../index.html" class="footer-logo">Wombat <span>Game Factory</span></a>
+        <ul class="footer-links">
+          <li><a href="https://instagram.com/wombatgamefactory" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://youtube.com/@wombatgamefactory" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://boardgamegeek.com/boardgamedesigner/123443/dean-morris" target="_blank"
+              rel="noopener">BoardGameGeek</a></li>
+        </ul>
+        <div class="footer-copy">© 2026 Dean Morris / Wombat Game Factory</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Initialise GLightbox -->
+  <script>
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: false
+    });
+  </script>
+
+</body>
+
+</html>
