@@ -15,6 +15,8 @@
   --text-muted: #a89a86;
   --border: #2c414c;
   --border-light: #3d5765;
+  --kickstarter: #05ce78;       /* Kickstarter brand green */
+  --kickstarter-light: #3ee59b;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -588,6 +590,20 @@ p { margin-bottom: 1rem; }
 .quick-link-primary .quick-link-label { font-size: 0.68rem; letter-spacing: 0.04em; white-space: nowrap; }
 .quick-link-primary .quick-link-icon { font-size: 1rem; }
 .quick-link-primary:last-child { padding-bottom: 0.8rem; }
+
+/* Kickstarter campaign link - Kickstarter green with their K mark */
+.quick-link-kickstarter {
+  background: var(--kickstarter); border: 1px solid var(--kickstarter);
+  padding: 0.8rem 0.75rem; margin: 0.35rem 0; color: var(--ink);
+}
+.quick-link-kickstarter:last-child { padding-bottom: 0.8rem; }
+.quick-link-kickstarter:hover {
+  background: var(--kickstarter-light); border-color: var(--kickstarter-light); color: var(--ink);
+}
+.quick-link-kickstarter .quick-link-label,
+.quick-link-kickstarter .quick-link-arrow { color: var(--ink); }
+.quick-link-kickstarter .quick-link-icon { display: flex; }
+.quick-link-kickstarter .quick-link-icon svg { width: 1.2rem; height: 1.2rem; fill: currentColor; }
 .quick-link-icon { font-size: 1.1rem; flex-shrink: 0; }
 .quick-link-label {
   font-family: 'Oswald', sans-serif;
