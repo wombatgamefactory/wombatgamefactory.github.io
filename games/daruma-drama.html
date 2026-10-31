@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daruma Drama - Wombat Game Factory</title>
+  <meta name="description" content="Daruma Drama - a board game in development by Dean Morris / Wombat Game Factory.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Daruma Drama - a board game from Dean Morris">
+  <meta property="og:description" content="A trick-taking card game where the card you lose with becomes your trump. Currently in development.">
+  <meta property="og:image" content="https://www.wombatgamefactory.com/images/daruma_drama_logo_graph.jpg">
+  <meta property="og:url" content="https://www.wombatgamefactory.com/games/daruma-drama.html">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Daruma Drama - a board game from Dean Morris">
+  <meta name="twitter:description" content="A trick-taking card game where the card you lose with becomes your trump. Currently in development.">
+  <meta name="twitter:image" content="https://www.wombatgamefactory.com/images/daruma_drama_logo_graph.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+  <!-- Start cookieyes banner -->
+  <script id="cookieyes" type="text/javascript"
+    src="https://cdn-cookieyes.com/client_data/b4b72588ac323168ef2bca929b5e5cd9/script.js"></script>
+  <!-- End cookieyes banner -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNNQF917JJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-FNNQF917JJ');
+  </script>
+  <script>function loadScript(a) { var b = document.getElementsByTagName("head")[0], c = document.createElement("script"); c.type = "text/javascript", c.src = "https://tracker.metricool.com/resources/be.js", c.onreadystatechange = a, c.onload = a, b.appendChild(c) } loadScript(function () { beTracker.t({ hash: "246df0746358adafd3745b08e93dc646" }) });</script>
+
+  <style>
+    .photos-grid-compact {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .photos-grid-compact .photo-cell {
+      aspect-ratio: 4/3;
+    }
+
+    .video-compact {
+      max-width: 460px;
+      margin: 0 0 1.5rem 0;
+    }
+
+    .video-compact .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+    }
+
+    .video-compact .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .photos-grid-compact {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .video-compact {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="site-nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">Wombat <span>Game Factory</span></a>
+        <ul class="nav-links">
+          <li><a href="../index.html#games">Games</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="../index.html#games">Games</a>
+        <span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-current">Daruma Drama</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="game-hero">
+    <div class="container">
+      <div class="game-hero-inner">
+
+        <!-- Left column: logo + publisher resources -->
+        <div class="game-logo-column">
+          <div class="game-logo-box">
+            <img src="../images/daruma_drama_logo_main.jpg" alt="Daruma Drama logo">
+          </div>
+
+          <div class="publisher-quick-links">
+            <h4>Publisher Resources</h4>
+            <a href="../files/daruma-drama-sell-sheet.pdf" class="quick-link" target="_blank" rel="noopener">
+              <span class="quick-link-icon">📄</span>
+              <span class="quick-link-label">Sell Sheet</span>
+              <span class="quick-link-arrow">↓</span>
+            </a>
+            <a href="../files/daruma-drama-rulebook.pdf" class="quick-link" target="_blank" rel="noopener">
+              <span class="quick-link-icon">📖</span>
+              <span class="quick-link-label">Rulebook</span>
+              <span class="quick-link-arrow">↓</span>
+            </a>
+            <a href="#signup" class="quick-link">
+              <span class="quick-link-icon">🔔</span>
+              <span class="quick-link-label">Subscribe</span>
+              <span class="quick-link-arrow">↓</span>
+            </a>
+            <a href="../index.html#contact" class="quick-link">
+              <span class="quick-link-icon">✉️</span>
+              <span class="quick-link-label">Request a Demo</span>
+              <span class="quick-link-arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right column: game info -->
+        <div class="game-info">
+          <div class="game-info-header">
+            <h1 class="game-page-title">Daruma Drama</h1>
+            <span class="badge badge-development">In Development</span>
+          </div>
+          <p class="game-tagline">Fall seven times, stand up eight.</p>
+
+          <div class="game-stats-bar">
+            <div class="game-stat">
+              <span class="game-stat-label">Players</span>
+              <span class="game-stat-value">3–5</span>
+            </div>
+            <div class="game-stat">
+              <span class="game-stat-label">Play Time</span>
+              <span class="game-stat-value">30–40 Min</span>
+            </div>
+            <div class="game-stat">
+              <span class="game-stat-label">Age</span>
+              <span class="game-stat-value">10+</span>
+            </div>
+            <div class="game-stat">
+              <span class="game-stat-label">Weight</span>
+              <span class="game-stat-value">1.8 / 5</span>
+            </div>
+            <div class="game-stat">
+              <span class="game-stat-label">Status</span>
+              <span class="game-stat-value">In Development</span>
+            </div>
+          </div>
+
+          <!-- ── Photos (above description) ── -->
+          <div class="photos-grid-compact">
+            <div class="photo-cell">
+              <a href="../images/daruma_drama_game_01.jpg" class="glightbox" data-gallery="daruma-gallery"
+                data-description="Every card you lose a trick with lies sideways in your fall line, and the leftmost one is your personal trump colour.">
+                <img src="../images/daruma_drama_game_01.jpg" alt="Three sideways Daruma Drama cards in a row, gold, blue and red, with the leftmost gold card labelled &quot;Trump&quot;.">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/daruma_drama_game_02.jpg" class="glightbox" data-gallery="daruma-gallery"
+                data-description="Fifty-five cards in five colours, numbered 1 to 11, each colour with its own Daruma backdrop and bird.">
+                <img src="../images/daruma_drama_game_02.jpg" alt="A fan of five cards, one each of red, gold, green, blue and purple, showing different numbers.">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/daruma_drama_game_03.jpg" class="glightbox" data-gallery="daruma-gallery"
+                data-description="At a four-player table, Player 3 cannot follow blue, but gold is their trump, so their gold 4 beats the led blue 7 and the blue 9.">
+                <img src="../images/daruma_drama_game_03.jpg" alt="Four cards in a row: blue 7 led, blue 9 followed, gold 4 trumped and marked as the winner, and green 11 discarded.">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/daruma_drama_game_04.jpg" class="glightbox" data-gallery="daruma-gallery"
+                data-description="Win a trick and you rise: your fallen cards go face down into your score pile, one point each, and you lose your trump until you fall again.">
+                <img src="../images/daruma_drama_game_04.jpg" alt="Three sideways cards, an arrow, and a face-down pile of cards marked &quot;+3&quot;.">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/daruma_drama_game_05.jpg" class="glightbox" data-gallery="daruma-gallery"
+                data-description="The card back and the player aid, which gives the rules of a trick at a glance.">
+                <img src="../images/daruma_drama_game_05.jpg" alt="A Daruma Drama card back beside the player aid, which lists the rules for losing, trumping and winning a trick.">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/daruma_drama_game_06.jpg" class="glightbox" data-gallery="daruma-gallery"
+                data-description="Five colours, five wishes: Luck, Fortune, Health, Learning and Long Life, each with its own bird so the game is playable by colour-blind players.">
+                <img src="../images/daruma_drama_game_06.jpg" alt="Five round bird icons in a row, red, gold, green, blue and purple, labelled Luck, Fortune, Health, Learning and Long Life.">
+              </a>
+            </div>
+          </div>
+
+          <!-- ── Description (below images and video) ── -->
+          <p class="game-description-full">
+            Daruma Drama is a trick-taking game built on the Japanese Daruma doll, which is weighted so that however
+            often it is knocked over, it rolls back upright. The proverb that goes with it says: fall seven times,
+            stand up eight. In this game, falling is how you get ahead.
+          </p>
+          <p class="game-description-full">
+            Every card you lose a trick with lies sideways in front of you, knocked over. Your oldest fallen card is
+            your own personal trump, so each player has a different one. Win a trick and you stand back up: your
+            fallen cards are banked as points, but you give up your trump until you fall again.
+          </p>
+          <p class="game-description-full">
+            Your line of fallen cards holds three, and everyone can see who is about to rise. That makes leading to
+            lose a real choice, and the timing of your rise the heart of the game. Rise early and you bank
+            little; fall a fourth time and your oldest card is knocked off, taking your trump with it.
+          </p>
+          <p class="game-description-full">
+            The deck has 55 cards in five colours, each colour with its own bird so the game is friendly to
+            colour-blind players. It comes with player aids and a score pad. It plays with three to five players
+            in about 30 to 40 minutes, and is now heading to the table.
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Playtest Signup ── -->
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="signup-inner">
+        <h3>Stay in the Loop</h3>
+        <p>
+          Sign up to be notified when Daruma Drama is available for public playtesting
+          at conventions, or when it finds a publisher.
+        </p>
+        <form class="signup-form"
+          action="https://wombatgamefactory.us22.list-manage.com/subscribe/post?u=bc31d542d3f5435ad5c8b24b7&id=33f5681f5c&f_id=007bc2e1f0"
+          method="post" target="_blank">
+          <!-- Bot trap - do not remove -->
+          <div style="position:absolute; left:-5000px;" aria-hidden="true">
+            <input type="text" name="b_bc31d542d3f5435ad5c8b24b7_33f5681f5c" tabindex="-1" value="">
+          </div>
+          <!-- Daruma Drama tag -->
+          <input type="hidden" name="tags" value="458">
+          <input type="email" name="EMAIL" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-primary">Notify Me</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="../index.html" class="footer-logo">Wombat <span>Game Factory</span></a>
+        <ul class="footer-links">
+          <li><a href="https://instagram.com/wombatgamefactory" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://youtube.com/@wombatgamefactory" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://boardgamegeek.com/boardgamedesigner/123443/dean-morris" target="_blank"
+              rel="noopener">BoardGameGeek</a></li>
+        </ul>
+        <div class="footer-copy">© 2026 Dean Morris / Wombat Game Factory</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Initialise GLightbox -->
+  <script>
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: false
+    });
+  </script>
+
+</body>
+
+</html>
