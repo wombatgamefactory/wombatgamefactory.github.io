@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snowy River - Wombat Game Factory</title>
+  <meta name="description" content="Snowy River - a card game in development by Dean Morris / Wombat Game Factory.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Snowy River - a card game from Dean Morris">
+  <meta property="og:description" content="A trick-taking card game that turns upside down at the summit: high wins the climb, low wins the descent. Currently in development.">
+  <meta property="og:image" content="https://www.wombatgamefactory.com/images/snowy_river_logo_graph.jpg">
+  <meta property="og:url" content="https://www.wombatgamefactory.com/games/snowy-river.html">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Snowy River - a card game from Dean Morris">
+  <meta name="twitter:description" content="A trick-taking card game that turns upside down at the summit: high wins the climb, low wins the descent. Currently in development.">
+  <meta name="twitter:image" content="https://www.wombatgamefactory.com/images/snowy_river_logo_graph.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+  <!-- Start cookieyes banner -->
+  <script id="cookieyes" type="text/javascript"
+    src="https://cdn-cookieyes.com/client_data/b4b72588ac323168ef2bca929b5e5cd9/script.js"></script>
+  <!-- End cookieyes banner -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNNQF917JJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-FNNQF917JJ');
+  </script>
+  <script>function loadScript(a) { var b = document.getElementsByTagName("head")[0], c = document.createElement("script"); c.type = "text/javascript", c.src = "https://tracker.metricool.com/resources/be.js", c.onreadystatechange = a, c.onload = a, b.appendChild(c) } loadScript(function () { beTracker.t({ hash: "246df0746358adafd3745b08e93dc646" }) });</script>
+
+  <style>
+    .photos-grid-compact {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .photos-grid-compact .photo-cell {
+      aspect-ratio: 4/3;
+    }
+
+    .video-compact {
+      max-width: 460px;
+      margin: 0 0 1.5rem 0;
+    }
+
+    .video-compact .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+    }
+
+    .video-compact .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .photos-grid-compact {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .video-compact {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="site-nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">Wombat <span>Game Factory</span></a>
+        <ul class="nav-links">
+          <li><a href="../index.html#games">Games</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="../index.html#games">Games</a>
+        <span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-current">Snowy River</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="game-hero">
+    <div class="container">
+      <div class="game-hero-inner">
+
+        <!-- Left column: logo + publisher resources -->
+        <div class="game-logo-column">
+          <div class="game-logo-box">
+            <img src="../images/snowy_river_logo_main.jpg" alt="Snowy River logo">
+          </div>
+
+          <div class="publisher-quick-links">
+            <h4>Publisher Resources</h4>
+            <a href="https://www.wombatgamefactory.com/snowy-river-game/" class="quick-link quick-link-primary"
+              target="_blank" rel="noopener">
+              <span class="quick-link-icon">🎮</span>
+              <span class="quick-link-label">Play Online in Your Browser</span>
+              <span class="quick-link-arrow">→</span>
+            </a>
+            <a href="../files/snowy-river-sell-sheet.pdf" class="quick-link" target="_blank" rel="noopener">
+              <span class="quick-link-icon">📄</span>
+              <span class="quick-link-label">Sell Sheet</span>
+              <span class="quick-link-arrow">↓</span>
+            </a>
+            <a href="../files/snowy-river-rulebook.pdf" class="quick-link" target="_blank" rel="noopener">
+              <span class="quick-link-icon">📖</span>
+              <span class="quick-link-label">Rulebook</span>
+              <span class="quick-link-arrow">↓</span>
+            </a>
+            <a href="#signup" class="quick-link">
+              <span class="quick-link-icon">🔔</span>
+              <span class="quick-link-label">Subscribe</span>
+              <span class="quick-link-arrow">↓</span>
+            </a>
+            <a href="../index.html#contact" class="quick-link">
+              <span class="quick-link-icon">✉️</span>
+              <span class="quick-link-label">Request a Demo</span>
+              <span class="quick-link-arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right column: game info -->
+        <div class="game-info">
+          <div class="game-info-header">
+            <h1 class="game-page-title">Snowy River</h1>
+            <span class="badge badge-development">In Development</span>
+          </div>
+          <p class="game-tagline">High wins the climb. Low wins the descent.</p>
+
+          <div class="game-stats-bar">
+            <div class="game-stat">
+              <span class="game-stat-label">Players</span>
+              <span class="game-stat-value">2–5</span>
+            </div>
+            <div class="game-stat">
+              <span class="game-stat-label">Play Time</span>
+              <span class="game-stat-value">20–30 Min</span>
+            </div>
+            <div class="game-stat">
+              <span class="game-stat-label">Age</span>
+              <span class="game-stat-value">10+</span>
+            </div>
+            <div class="game-stat">
+              <span class="game-stat-label">Cards</span>
+              <span class="game-stat-value">58</span>
+            </div>
+            <div class="game-stat">
+              <span class="game-stat-label">Status</span>
+              <span class="game-stat-value">In Development</span>
+            </div>
+          </div>
+
+          <!-- ── Photos (above description) ── -->
+          <div class="photos-grid-compact">
+            <div class="photo-cell">
+              <a href="../images/snowy_river_game_01.jpg" class="glightbox" data-gallery="snowy-river-gallery"
+                data-description="Four suits, Escape, Climb, Descent and Home, each numbered 1 to 12 and each with its own symbol: the trophy, the stockwhip, the hat and the horseshoe.">
+                <img src="../images/snowy_river_game_01.jpg" alt="A fan of four cards, an amber Escape 9, green Climb 4, red Descent 6 and blue Home 11, labelled Escape, Climb, Descent and Home with their icons.">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/snowy_river_game_02.jpg" class="glightbox" data-gallery="snowy-river-gallery"
+                data-description="Each trick drives the mob higher. The marker starts at 0 on the Mountain card and climbs 1 step for each climb trick, plus 1 for each off-suit card in it. When it reaches the summit at 7 the climb is over. With five players the Mountain is turned to its 0 to 6 side.">
+                <img src="../images/snowy_river_game_02.jpg" alt="A woodcut Mountain card with numbered steps from 0 up to 7 and a marker standing on step 4, with the summit marked at the top.">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/snowy_river_game_03.jpg" class="glightbox" data-gallery="snowy-river-gallery"
+                data-description="A climb trick: Player 1 leads Escape 9, Player 2 follows with Escape 4, Player 3 has no Escape and plays Climb 7, and Player 4 plays Escape 11. The highest card of the led suit wins, so Player 4 takes the trick. The off-suit card pushes the mob an extra step, so the marker moves 2.">
+                <img src="../images/snowy_river_game_03.jpg" alt="Four cards in a row: Escape 9 led, Escape 4 followed, Climb 7 off-suit marked &quot;Extra step&quot;, and Escape 11 marked as the winner.">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/snowy_river_game_04.jpg" class="glightbox" data-gallery="snowy-river-gallery"
+                data-description="At the summit everyone chooses in secret, Chase or Watch, then all reveal at once. Chasers risk their climb tricks to bring the mob home; watchers keep theirs. Here two players chase and two watch. If nobody chases, the mob escapes and the hand ends.">
+                <img src="../images/snowy_river_game_04.jpg" alt="Four cards in a row showing Chase, Watch, Watch and Chase for Players 1 to 4, a red rider whipping downhill and a grey watcher on a rock beside a wombat.">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/snowy_river_game_05.jpg" class="glightbox" data-gallery="snowy-river-gallery"
+                data-description="A descent trick: Player 1 leads Home 5, Player 2 follows with Home 8, Player 3 with Home 3 and Player 4 with Home 1. After the summit the lowest card of the led suit wins, so Player 4 takes it. Descent tricks score nothing, but the player with the most of them ends up at the mob's heels.">
+                <img src="../images/snowy_river_game_05.jpg" alt="Four night-blue cards in a row, Home 5 led, Home 8 and Home 3 followed, and Home 1 marked as the winner.">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/snowy_river_game_06.jpg" class="glightbox" data-gallery="snowy-river-gallery"
+                data-description="Bring the mob home. The Colt is worth 3, and each Brumby card tucked under it adds 2, so with one Brumby the mob is worth 5. A mob that escapes picks up another Brumby card; a chaser who brings it home scores it all.">
+                <img src="../images/snowy_river_game_06.jpg" alt="The Colt card, a purple prize horse with a rosette, with a teal Brumby card marked plus 2 tucked beneath it, beside the sum Colt 3 plus Brumby 2 making a mob of 5.">
+              </a>
+            </div>
+          </div>
+
+          <!-- ── Description (below images) ── -->
+          <p class="game-description-full">
+            Snowy River is a trick-taking game that turns upside down at the summit. It is based on Banjo Paterson's
+            poem The Man from Snowy River (public domain), and every hand follows the poem in order. A prize colt has
+            run off with the wild horses, and the mob is the prize.
+          </p>
+          <p class="game-description-full">
+            Up the mountain, the highest card of the led suit wins each trick, and the mob climbs a step for every
+            trick, and one more for every off-suit card. At the summit everyone chooses in secret: Chase the mob and
+            stake your climb tricks on bringing it home, or Watch and keep them. Then comes the terrible descent, where
+            the lowest card wins. The weedy pony that could never win a climb trick suddenly takes the ride down.
+          </p>
+          <p class="game-description-full">
+            Every card has two lives. A 12 rules the climb and is useless on the way down, and a 1 is the reverse. You
+            set the clock too: run out of a suit and the mob climbs faster, flipping the order before the big hands are
+            spent. If nobody chases, the mob escapes and is worth more next hand.
+          </p>
+          <p class="game-description-full">
+            The game has 58 cards: 48 horse cards in four suits numbered 1 to 12 (Escape, Climb, Descent and Home), a
+            two-sided Mountain card, the Colt, four Brumby cards and five Chase and Watch cards, plus a mob marker and a
+            score pad. It plays with two to five players in about 20 to 30 minutes, one hand each. It is a concept
+            being playtested.
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Playtest Signup ── -->
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="signup-inner">
+        <h3>Stay in the Loop</h3>
+        <p>
+          Sign up to be notified when Snowy River is available for public playtesting
+          at conventions, or when it finds a publisher.
+        </p>
+        <!-- TODO: Snowy River Mailchimp f_id and tag (add &f_id=... to the action URL and a hidden "tags" input) -->
+        <form class="signup-form"
+          action="https://wombatgamefactory.us22.list-manage.com/subscribe/post?u=bc31d542d3f5435ad5c8b24b7&id=33f5681f5c"
+          method="post" target="_blank">
+          <!-- Bot trap - do not remove -->
+          <div style="position:absolute; left:-5000px;" aria-hidden="true">
+            <input type="text" name="b_bc31d542d3f5435ad5c8b24b7_33f5681f5c" tabindex="-1" value="">
+          </div>
+          <input type="email" name="EMAIL" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-primary">Notify Me</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="../index.html" class="footer-logo">Wombat <span>Game Factory</span></a>
+        <ul class="footer-links">
+          <li><a href="https://instagram.com/wombatgamefactory" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://youtube.com/@wombatgamefactory" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://boardgamegeek.com/boardgamedesigner/123443/dean-morris" target="_blank"
+              rel="noopener">BoardGameGeek</a></li>
+        </ul>
+        <div class="footer-copy">© 2026 Dean Morris / Wombat Game Factory</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Initialise GLightbox -->
+  <script>
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: false
+    });
+  </script>
+
+</body>
+
+</html>
