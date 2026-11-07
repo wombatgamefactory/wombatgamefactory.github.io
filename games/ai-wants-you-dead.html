@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Wants You Dead - Wombat Game Factory</title>
+  <meta name="description" content="AI Wants You Dead - a card game in development by Dean Morris / Wombat Game Factory.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI Wants You Dead - a card game from Dean Morris">
+  <meta property="og:description" content="A comedy card game played with your hand held backwards. Everyone can see whether you're human. Except you. Currently in development.">
+  <meta property="og:image" content="https://www.wombatgamefactory.com/images/ai_wants_you_dead_logo_graph.jpg">
+  <meta property="og:url" content="https://www.wombatgamefactory.com/games/ai-wants-you-dead.html">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Wants You Dead - a card game from Dean Morris">
+  <meta name="twitter:description" content="A comedy card game played with your hand held backwards. Everyone can see whether you're human. Except you. Currently in development.">
+  <meta name="twitter:image" content="https://www.wombatgamefactory.com/images/ai_wants_you_dead_logo_graph.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+  <!-- Start cookieyes banner -->
+  <script id="cookieyes" type="text/javascript"
+    src="https://cdn-cookieyes.com/client_data/b4b72588ac323168ef2bca929b5e5cd9/script.js"></script>
+  <!-- End cookieyes banner -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNNQF917JJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-FNNQF917JJ');
+  </script>
+  <script>function loadScript(a) { var b = document.getElementsByTagName("head")[0], c = document.createElement("script"); c.type = "text/javascript", c.src = "https://tracker.metricool.com/resources/be.js", c.onreadystatechange = a, c.onload = a, b.appendChild(c) } loadScript(function () { beTracker.t({ hash: "246df0746358adafd3745b08e93dc646" }) });</script>
+
+  <style>
+    .photos-grid-compact {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .photos-grid-compact .photo-cell {
+      aspect-ratio: 4/3;
+    }
+
+    .video-compact {
+      max-width: 460px;
+      margin: 0 0 1.5rem 0;
+    }
+
+    .video-compact .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+    }
+
+    .video-compact .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .photos-grid-compact {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .video-compact {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="site-nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">Wombat <span>Game Factory</span></a>
+        <ul class="nav-links">
+          <li><a href="../index.html#games">Games</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="../index.html#games">Games</a>
+        <span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-current">AI Wants You Dead</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="game-hero">
+    <div class="container">
+      <div class="game-hero-inner">
+
+        <!-- Left column: logo + publisher resources -->
+        <div class="game-logo-column">
+          <div class="game-logo-box">
+            <img src="../images/ai_wants_you_dead_logo_main.jpg" alt="AI Wants You Dead logo">
+          </div>
+
+          <div class="publisher-quick-links">
+            <h4>Publisher Resources</h4>
+            <!-- TODO: sell sheet link (../files/ai-wants-you-dead-sell-sheet.pdf) once one exists -->
+            <a href="../files/ai-wants-you-dead-rulebook.pdf" class="quick-link" target="_blank" rel="noopener">
+              <span class="quick-link-icon">📖</span>
+              <span class="quick-link-label">Rulebook</span>
+              <span class="quick-link-arrow">↓</span>
+            </a>
+            <a href="#signup" class="quick-link">
+              <span class="quick-link-icon">🔔</span>
+              <span class="quick-link-label">Subscribe</span>
+              <span class="quick-link-arrow">↓</span>
+            </a>
+            <a href="../index.html#contact" class="quick-link">
+              <span class="quick-link-icon">✉️</span>
+              <span class="quick-link-label">Request a Demo</span>
+              <span class="quick-link-arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right column: game info -->
+        <div class="game-info">
+          <div class="game-info-header">
+            <h1 class="game-page-title">AI Wants You Dead</h1>
+            <span class="badge badge-development">In Development</span>
+          </div>
+          <p class="game-tagline">Everyone can see whether you're human. Except you.</p>
+
+          <div class="game-stats-bar">
+            <div class="game-stat">
+              <span class="game-stat-label">Players</span>
+              <span class="game-stat-value">2–5</span>
+            </div>
+            <div class="game-stat">
+              <span class="game-stat-label">Play Time</span>
+              <span class="game-stat-value">10–15 Min</span>
+            </div>
+            <div class="game-stat">
+              <span class="game-stat-label">Age</span>
+              <span class="game-stat-value">8+</span>
+            </div>
+            <div class="game-stat">
+              <span class="game-stat-label">Cards</span>
+              <span class="game-stat-value">52</span>
+            </div>
+            <div class="game-stat">
+              <span class="game-stat-label">Status</span>
+              <span class="game-stat-value">In Development</span>
+            </div>
+          </div>
+
+          <!-- ── Photos (above description) ── -->
+          <div class="photos-grid-compact">
+            <div class="photo-cell">
+              <a href="../images/ai_wants_you_dead_game_01.jpg" class="glightbox" data-gallery="ai-wants-you-dead-gallery"
+                data-description="Your code is your hand, held facing outwards. You see only the coloured backs, so you know your code's colours and never its symbols. Everyone else sees every face. Talk is free and lies are fine; only the compile check must be truthful.">
+                <img src="../images/ai_wants_you_dead_game_01.jpg" alt="Three card backs, red, green and yellow, labelled You see, beside the same three cards face up, a red pi, green root 2 and yellow 404, labelled The table sees.">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/ai_wants_you_dead_game_02.jpg" class="glightbox" data-gallery="ai-wants-you-dead-gallery"
+                data-description="36 Parts in four colours, red Killer Robots, blue Chatbots, green Smart Home and yellow Self-Driving, each with nine symbols: i, √2, φ, e, π, τ, 42, 404 and ∞. Each colour has each symbol once. Four Rogue AIs hide among them, each wearing its colour's back.">
+                <img src="../images/ai_wants_you_dead_game_02.jpg" alt="A fan of five cards: a blue 42, green infinity, red pi and yellow tau, each with a cartoon robot or gadget, and a dark Rogue AI card showing a smiling robot holding a teacup and a bomb.">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/ai_wants_you_dead_game_03.jpg" class="glightbox" data-gallery="ai-wants-you-dead-gallery"
+                data-description="Upgrade: draw a card, then keep it face up in your cache or slip it into your left neighbour's code. Here Charles draws a red π. Jean already has a blue π in her cache, so he slips it into her code. She sees only one more red back. A drawn Rogue AI must always be slipped.">
+                <img src="../images/ai_wants_you_dead_game_03.jpg" alt="A red pi card with an arrow labelled Slip pointing to Jean's cache, a blue pi and a green e, with the blue pi marked as a clash.">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/ai_wants_you_dead_game_04.jpg" class="glightbox" data-gallery="ai-wants-you-dead-gallery"
+                data-description="Debug: choose one of your code cards, flip it face up and delete it. There is no penalty, whatever it turns out to be. Alan flips his yellow card and finds a Rogue AI, which leaves the game. Everyone else knew all along.">
+                <img src="../images/ai_wants_you_dead_game_04.jpg" alt="Three card backs, yellow, green and red, with the yellow one glowing, and an arrow labelled Flip pointing to a Rogue AI card marked Leaves the game.">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/ai_wants_you_dead_game_05.jpg" class="glightbox" data-gallery="ai-wants-you-dead-gallery"
+                data-description="Compile: say &quot;I'm not a robot!&quot; and the table checks your cache and code together. No repeated symbol and no Rogue AI, so Charles has compiled. He banks his four cache cards for 4 points and, having banked 4 or more, takes a +5 bonus card. Bonus cards are first come, first served.">
+                <img src="../images/ai_wants_you_dead_game_05.jpg" alt="A cache of four cards, red i, blue phi, green 404 and yellow tau, above a code of three, yellow 42, red pi and blue e, with a green Compiled label and a purple plus 5 bonus card.">
+              </a>
+            </div>
+            <div class="photo-cell">
+              <a href="../images/ai_wants_you_dead_game_06.jpg" class="glightbox" data-gallery="ai-wants-you-dead-gallery"
+                data-description="Compile error: Loretta's code holds a Rogue AI. Her whole cache is discarded and scores nothing, and nobody says why, so the Rogue AI stays in her code. All she can see is a green, a yellow and a blue back.">
+                <img src="../images/ai_wants_you_dead_game_06.jpg" alt="A cache of three cards, yellow root 2, red i and blue e, above a code of a glowing Rogue AI, yellow pi and blue 404, a red Compile error label, and Loretta's own view of three card backs.">
+              </a>
+            </div>
+          </div>
+
+          <!-- ── Description (below images) ── -->
+          <p class="game-description-full">
+            AI Wants You Dead is a comedy card game about a very helpful AI. It has checked the room, and it is
+            confident that everyone in it is human. It is not. Some of you are carrying a Rogue AI, and your friends
+            can see who. You can't.
+          </p>
+          <p class="game-description-full">
+            You hold your hand backwards. Your code faces the table, so everyone else sees your symbols and you see
+            only the coloured backs. On your turn you Upgrade (draw a card and keep it face up in your cache, or slip
+            it into your left neighbour's code), Debug (flip one of your own code cards and delete it), or Compile.
+          </p>
+          <p class="game-description-full">
+            To compile, say "I'm not a robot!" The table checks your cache and your code together. If no symbol
+            appears twice and no Rogue AI is hiding in your code, you bank your cache for a point a card, and big banks
+            claim bonus cards. If not, it's a compile error: your cache is wiped, and nobody tells you why. Talk is
+            free and lies are fine. Only the check must be truthful.
+          </p>
+          <p class="game-description-full">
+            The game has 52 cards: 36 Parts in four colours (Killer Robots, Chatbots, Smart Home and Self-Driving),
+            each with nine symbols from i to 404, plus 4 Rogue AIs, 6 bonus cards and 6 rules cards. Every Part has its
+            own joke, the AI cheerfully getting the maths wrong: "π = 3.2. I have checked this." It plays with two to
+            five players in 10 to 15 minutes, and teaches in two. It is in development.
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Playtest Signup ── -->
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="signup-inner">
+        <h3>Stay in the Loop</h3>
+        <p>
+          Sign up to be notified when AI Wants You Dead is available for public playtesting
+          at conventions, or when it finds a publisher.
+        </p>
+        <!-- TODO: AI Wants You Dead Mailchimp f_id and tag (add &f_id=... to the action URL and a hidden "tags" input) -->
+        <form class="signup-form"
+          action="https://wombatgamefactory.us22.list-manage.com/subscribe/post?u=bc31d542d3f5435ad5c8b24b7&id=33f5681f5c"
+          method="post" target="_blank">
+          <!-- Bot trap - do not remove -->
+          <div style="position:absolute; left:-5000px;" aria-hidden="true">
+            <input type="text" name="b_bc31d542d3f5435ad5c8b24b7_33f5681f5c" tabindex="-1" value="">
+          </div>
+          <input type="email" name="EMAIL" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-primary">Notify Me</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="../index.html" class="footer-logo">Wombat <span>Game Factory</span></a>
+        <ul class="footer-links">
+          <li><a href="https://instagram.com/wombatgamefactory" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://youtube.com/@wombatgamefactory" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://boardgamegeek.com/boardgamedesigner/123443/dean-morris" target="_blank"
+              rel="noopener">BoardGameGeek</a></li>
+        </ul>
+        <div class="footer-copy">© 2026 Dean Morris / Wombat Game Factory</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Initialise GLightbox -->
+  <script>
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: false
+    });
+  </script>
+
+</body>
+
+</html>
