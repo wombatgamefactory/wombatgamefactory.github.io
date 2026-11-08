@@ -400,6 +400,7 @@ p { margin-bottom: 1rem; }
 .badge-signed     { color: var(--silver);        border-color: var(--silver);        background: rgba(154,171,184,0.08); }
 .badge-development{ color: var(--copper-light);  border-color: var(--copper);        background: rgba(196,114,58,0.08);  }
 .badge-kickstarter{ color: var(--kickstarter);   border-color: var(--kickstarter);   background: rgba(5,206,120,0.08);   }
+.badge-pitching   { color: var(--ink);           border-color: var(--copper);        background: var(--copper); font-weight: 500; }
 
 /* ── Buttons ── */
 .btn {
