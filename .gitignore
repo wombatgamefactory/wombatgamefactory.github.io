@@ -1,0 +1,6 @@
+# Only files the live site needs go to GitHub.
+# Notes, task lists and Claude config stay local.
+*.md
+tasks/
+.claude/
+.claudeignore
