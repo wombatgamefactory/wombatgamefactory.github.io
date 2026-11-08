@@ -345,6 +345,41 @@ p { margin-bottom: 1rem; }
 .play-online-link-kickstarter .play-online-link-icon { display: flex; }
 .play-online-link-kickstarter .play-online-link-icon svg { width: 1rem; height: 1rem; fill: currentColor; }
 
+/* ── Category tiles (landing page: card games grouped by category) ── */
+.group-header-link {
+  font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--copper); text-decoration: none;
+  white-space: nowrap; transition: color 0.2s;
+}
+.group-header-link:hover { color: var(--copper-light); }
+.group-header-link span { font-size: 0.8rem; }
+
+.category-tile-image {
+  background: var(--bg-card);
+  background-image: radial-gradient(circle at 50% 120%, var(--border), transparent 70%);
+}
+.category-tile-glyph {
+  font-family: 'Oswald', sans-serif; font-size: 5.5rem; line-height: 1;
+  color: var(--copper); opacity: 0.8; transition: color 0.3s, opacity 0.3s;
+}
+.category-tile:hover .category-tile-glyph { color: var(--copper-light); opacity: 1; }
+.category-tile-examples {
+  font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--cream); line-height: 1.6; margin-bottom: 1rem;
+}
+.category-tile-cta {
+  display: flex; align-items: center; justify-content: center; gap: 0.55rem;
+  width: 100%; margin-top: 1rem; padding: 0.8rem 1rem;
+  font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  background: var(--copper); border: 1px solid var(--copper);
+  color: var(--ink); transition: all 0.2s;
+}
+.category-tile:hover .category-tile-cta {
+  background: var(--copper-light); border-color: var(--copper-light);
+  box-shadow: 0 0 16px 0 rgba(224,144,96,0.3);
+}
+
 /* ── Badges ── */
 .badge {
   display: inline-flex; align-items: center; gap: 0.4rem;
@@ -654,4 +689,6 @@ p { margin-bottom: 1rem; }
   .signup-form input[type="email"] { border-right: 1px solid var(--border); border-bottom: none; }
   .hero-stats { gap: 1.5rem; }
   .games-grid { grid-template-columns: 1fr; }
+  .game-group-header { flex-wrap: wrap; row-gap: 0.6rem; }
+  .category-tile-glyph { font-size: 4.5rem; }
 }
