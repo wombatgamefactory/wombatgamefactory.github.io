@@ -353,16 +353,6 @@ p { margin-bottom: 1rem; }
 }
 .group-header-link:hover { color: var(--copper-light); }
 .group-header-link span { font-size: 0.8rem; }
-
-.category-tile-image {
-  background: var(--bg-card);
-  background-image: radial-gradient(circle at 50% 120%, var(--border), transparent 70%);
-}
-.category-tile-glyph {
-  font-family: 'Oswald', sans-serif; font-size: 5.5rem; line-height: 1;
-  color: var(--copper); opacity: 0.8; transition: color 0.3s, opacity 0.3s;
-}
-.category-tile:hover .category-tile-glyph { color: var(--copper-light); opacity: 1; }
 .category-tile-examples {
   font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--cream); line-height: 1.6; margin-bottom: 1rem;
@@ -690,5 +680,4 @@ p { margin-bottom: 1rem; }
   .hero-stats { gap: 1.5rem; }
   .games-grid { grid-template-columns: 1fr; }
   .game-group-header { flex-wrap: wrap; row-gap: 0.6rem; }
-  .category-tile-glyph { font-size: 4.5rem; }
 }
