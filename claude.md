@@ -23,7 +23,8 @@ The site serves two audiences:
 ```
 /
 ├── index.html              # Landing page
-├── style.css               # Shared stylesheet (all pages)
+├── card-games.html         # Card games page (Literature / General Trick Takers, Family, Party)
+├── css/style.css           # Shared stylesheet (all pages)
 ├── games/
 │   ├── acacia.html
 │   ├── firefly-festival.html
@@ -75,6 +76,7 @@ Mobile breakpoints are defined at the bottom of `style.css`. On mobile: photo gr
 - Dean Morris bio, photo, contact details
 - Game grid — all 7 games, each with: logo, name, status badge, one-line description
 - Clicking a game card navigates to that game's page
+- Card games are NOT listed individually on the home page. The "Card Games" group holds three category tiles (Trick-Taking, Family, Party) linking to anchors on `card-games.html`. A new card game gets its card on `card-games.html` in the right group (`#literature-trick-takers`, `#general-trick-takers`, `#family-games`, `#party-games`), and the matching home tile's example list and count are updated. Its game page breadcrumb points to `../card-games.html#<group>`.
 
 ### Game Pages (games/*.html)
 Two-column layout:
