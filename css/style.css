@@ -17,6 +17,7 @@
   --border-light: #3d5765;
   --kickstarter: #05ce78;       /* Kickstarter brand green */
   --kickstarter-light: #3ee59b;
+  --pitching: #5aa9e6;          /* blue fill for the Pitching badge */
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -400,7 +401,7 @@ p { margin-bottom: 1rem; }
 .badge-signed     { color: var(--silver);        border-color: var(--silver);        background: rgba(154,171,184,0.08); }
 .badge-development{ color: var(--copper-light);  border-color: var(--copper);        background: rgba(196,114,58,0.08);  }
 .badge-kickstarter{ color: var(--kickstarter);   border-color: var(--kickstarter);   background: rgba(5,206,120,0.08);   }
-.badge-pitching   { color: var(--ink);           border-color: var(--copper);        background: var(--copper); font-weight: 500; }
+.badge-pitching   { color: var(--ink);           border-color: var(--pitching);      background: var(--pitching); font-weight: 500; }
 
 /* ── Buttons ── */
 .btn {
