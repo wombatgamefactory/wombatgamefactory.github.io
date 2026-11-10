@@ -1,23 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
 
+/* Light theme (11/2026). Several names date from the old dark theme and are kept so
+   every page's markup and inline styles keep working: --bg-dark is the page
+   background (now warm paper) and --cream is the heading colour (now petrol ink). */
 :root {
-  --bg-dark: #16242c;   /* page background - deep petrol */
-  --bg-card: #0e171c;   /* panels/cards - near black, cool undertone */
-  --bg-mid: #121d24;    /* raised strips: breadcrumb, signup */
-  --bg-light: #1b2b34;  /* image wells, hover states */
-  --ink: #0b1115;       /* foreground on copper fills */
-  --copper: #c4723a;
-  --copper-light: #e09060;
-  --gold: #d4a843;
-  --silver: #9aabb8;
-  --cream: #f0e6d3;
-  --text: #c8bcae;
-  --text-muted: #a89a86;
-  --border: #2c414c;
-  --border-light: #3d5765;
-  --kickstarter: #05ce78;       /* Kickstarter brand green */
-  --kickstarter-light: #3ee59b;
-  --pitching: #5aa9e6;          /* blue fill for the Pitching badge */
+  --bg-dark: #e9e0cf;   /* page background - warm paper */
+  --bg-card: #fffdf8;   /* panels/cards - near white, so they lift off the paper */
+  --bg-mid: #ded3bf;    /* raised strips: breadcrumb, signup, footer */
+  --bg-light: #d9cdb7;  /* image wells, hover states */
+  --ink: #fffdf8;       /* foreground on dark fills: petrol, green, blue */
+  --copper: #9c4715;        /* copper for text and thin accents - dark enough to read on paper */
+  --copper-light: #853b10;  /* copper text links and their hover */
+  --gold: #7a5a0c;
+  --silver: #55656f;
+  --cream: #17252d;     /* headings and labels - petrol ink */
+  --text: #36444b;
+  --text-muted: #505d63;
+  --border: #d0c4ad;
+  --border-light: #b9ac95;
+  --kickstarter: #047a48;       /* Kickstarter green, deepened to carry light text */
+  --kickstarter-light: #05935a;
+  --pitching: #1d5f96;          /* blue fill for the Pitching badge */
+  --petrol: #17252d;            /* nav bar and the email button */
+  --petrol-light: #2c414c;
+  --play: #c4723a;              /* bright copper fill - Play Online and other primary buttons */
+  --play-light: #d4864f;
+  --play-ink: #2a1608;          /* text and icons on the bright copper */
+  --radius: 8px;                /* buttons */
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -51,11 +60,16 @@ p { margin-bottom: 1rem; }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
 
 /* ── Navigation ── */
+/* The bar is petrol on a light page. Inside it the variables take dark-theme values,
+   so the logo, links and mobile menu follow without separate rules. */
 .site-nav {
+  --cream: #f0e6d3; --copper: #d98a57; --copper-light: #e8a377;
+  --text: #d3dade; --text-muted: #b4c0c6;
+  --border: #2c414c; --bg-card: #17252d; --bg-light: #20333d;
   position: sticky; top: 0; z-index: 100;
-  background: rgba(14, 23, 28, 0.96);
+  background: rgba(23, 37, 45, 0.97);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--petrol);
   padding: 1rem 0;
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; }
@@ -202,7 +216,7 @@ p { margin-bottom: 1rem; }
 .designer-photo {
   width: 280px; height: 280px; border-radius: 50%;
   object-fit: cover; border: 3px solid var(--border);
-  box-shadow: 0 0 50px rgba(196,114,58,0.12);
+  box-shadow: 0 14px 34px -18px rgba(23,37,45,0.5);
   flex-shrink: 0;
 }
 
@@ -212,27 +226,30 @@ p { margin-bottom: 1rem; }
   color: var(--copper-light); margin-bottom: 0.6rem;
 }
 
-/* ── Contact (hero sidebar) ── */
-.hero-contact {
-  display: grid; grid-template-columns: auto 1fr;
-  gap: 0.55rem 1rem; align-items: baseline;
-  width: 100%; max-width: 280px; margin: 0;
-  padding-top: 1.4rem;
+/* ── Contact (hero sidebar): email button, then one button per site ── */
+.hero-links {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;
+  width: 100%; max-width: 280px; padding-top: 1.4rem;
   border-top: 1px solid var(--border);
 }
-.hero-contact dt {
-  font-family: 'Oswald', sans-serif;
-  font-size: 0.56rem; letter-spacing: 0.12em;
+.hero-location {
+  grid-column: 1 / -1; margin: 0 0 0.3rem; text-align: center;
+  font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.18em;
   text-transform: uppercase; color: var(--text-muted);
-  white-space: nowrap;
 }
-.hero-contact dd {
-  margin: 0; color: var(--cream);
-  font-size: 0.85rem; line-height: 1.3;
-  overflow-wrap: anywhere;
+.contact-btn {
+  display: flex; align-items: center; justify-content: center; padding: 0.6rem 0.5rem;
+  font-family: 'Oswald', sans-serif; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase;
+  background: var(--bg-card); border: 1px solid var(--border-light); border-radius: var(--radius);
+  color: var(--cream); transition: all 0.2s;
 }
-.hero-contact dd a { color: var(--cream); }
-.hero-contact dd a:hover { color: var(--copper-light); }
+.contact-btn:hover { border-color: var(--copper); color: var(--copper-light); }
+.contact-btn-primary {
+  grid-column: 1 / -1; padding: 0.7rem 0.5rem;
+  font-size: 0.82rem; letter-spacing: 0.05em; text-transform: none;
+  background: var(--petrol); border-color: var(--petrol); color: var(--ink);
+}
+.contact-btn-primary:hover { background: var(--petrol-light); border-color: var(--petrol-light); color: var(--ink); }
 
 /* ── Games Section ── */
 .games-section { padding: 1.5rem 0 5rem; }
@@ -281,6 +298,7 @@ p { margin-bottom: 1rem; }
 .game-card {
   background: var(--bg-card); border: 1px solid var(--border);
   display: flex; flex-direction: column;
+  box-shadow: 0 1px 2px rgba(23,37,45,0.06), 0 10px 22px -18px rgba(23,37,45,0.45);
   transition: border-color 0.3s, transform 0.25s;
   text-decoration: none; color: inherit; overflow: hidden;
 }
@@ -342,23 +360,25 @@ p { margin-bottom: 1rem; }
   width: 100%; margin-top: 1rem; padding: 0.8rem 1rem;
   font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 500;
   letter-spacing: 0.14em; text-transform: uppercase;
-  background: var(--copper); border: 1px solid var(--copper);
-  color: var(--ink); text-decoration: none; transition: all 0.2s;
+  background: var(--play); border: 1px solid var(--play); border-radius: var(--radius);
+  color: var(--play-ink); text-decoration: none; transition: all 0.2s;
 }
 .play-online-link:hover {
-  background: var(--copper-light); border-color: var(--copper-light);
-  color: var(--ink); box-shadow: 0 0 16px 0 rgba(224,144,96,0.3);
+  background: var(--play-light); border-color: var(--play-light);
+  color: var(--play-ink);
 }
-.play-online-link-icon { font-size: 1rem; line-height: 1; }
+.play-online-link-icon { display: flex; font-size: 1rem; line-height: 1; }
 .play-online-link-arrow { font-size: 0.85rem; }
 
+/* Controller icon for Play Online: a solid shape with the d-pad, four face buttons
+   and twin sticks cut out of it. Takes the colour of the text around it. */
+.icon-pad { display: block; width: 1.6rem; height: 1.09rem; fill: currentColor; fill-rule: evenodd; }
+
 /* Kickstarter variant of the card bar - matches .quick-link-kickstarter on game pages */
-.play-online-link-kickstarter { background: var(--kickstarter); border-color: var(--kickstarter); }
+.play-online-link-kickstarter { background: var(--kickstarter); border-color: var(--kickstarter); color: var(--ink); }
 .play-online-link-kickstarter:hover {
-  background: var(--kickstarter-light); border-color: var(--kickstarter-light);
-  box-shadow: 0 0 16px 0 rgba(5,206,120,0.3);
+  background: var(--kickstarter-light); border-color: var(--kickstarter-light); color: var(--ink);
 }
-.play-online-link-kickstarter .play-online-link-icon { display: flex; }
 .play-online-link-kickstarter .play-online-link-icon svg { width: 1rem; height: 1rem; fill: currentColor; }
 
 /* ── Category tiles (landing page: card games grouped by category) ── */
@@ -378,12 +398,11 @@ p { margin-bottom: 1rem; }
   width: 100%; margin-top: 1rem; padding: 0.8rem 1rem;
   font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 500;
   letter-spacing: 0.14em; text-transform: uppercase;
-  background: var(--copper); border: 1px solid var(--copper);
-  color: var(--ink); transition: all 0.2s;
+  background: var(--play); border: 1px solid var(--play); border-radius: var(--radius);
+  color: var(--play-ink); transition: all 0.2s;
 }
 .category-tile:hover .category-tile-cta {
-  background: var(--copper-light); border-color: var(--copper-light);
-  box-shadow: 0 0 16px 0 rgba(224,144,96,0.3);
+  background: var(--play-light); border-color: var(--play-light);
 }
 
 /* ── Badges ── */
@@ -408,20 +427,20 @@ p { margin-bottom: 1rem; }
   display: inline-flex; align-items: center; gap: 0.5rem;
   padding: 0.75rem 1.5rem; font-family: 'Oswald', sans-serif;
   font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase;
-  border: 1px solid var(--copper); color: var(--copper-light);
+  border: 1px solid var(--copper); border-radius: var(--radius); color: var(--copper-light);
   background: transparent; cursor: pointer; transition: all 0.2s;
   text-decoration: none;
 }
-.btn:hover { background: var(--copper); color: var(--ink); }
-.btn-primary { background: var(--copper); color: var(--ink); }
-.btn-primary:hover { background: var(--copper-light); border-color: var(--copper-light); }
+.btn:hover { background: var(--play); border-color: var(--play); color: var(--play-ink); }
+.btn-primary { background: var(--play); border-color: var(--play); color: var(--play-ink); }
+.btn-primary:hover { background: var(--play-light); border-color: var(--play-light); }
 .btn-sm { padding: 0.5rem 1rem; font-size: 0.7rem; }
 .btn-ghost { border-color: var(--border-light); color: var(--text-muted); }
 .btn-ghost:hover { border-color: var(--copper); color: var(--copper-light); background: transparent; }
 
 /* ── Footer ── */
 .site-footer {
-  background: var(--bg-card); border-top: 1px solid var(--border);
+  background: var(--bg-mid); border-top: 1px solid var(--border);
   padding: 3rem 0; margin-top: 4rem;
 }
 .footer-inner {
@@ -564,9 +583,12 @@ p { margin-bottom: 1rem; }
 .signup-inner h3 { margin-bottom: 0.75rem; }
 .signup-inner p { color: var(--text-muted); margin-bottom: 2rem; font-size: 1rem; }
 .signup-form { display: flex; }
+/* Input and button join into one rounded control */
+.signup-form .btn { border-radius: 0 var(--radius) var(--radius) 0; }
 .signup-form input[type="email"] {
   flex: 1; padding: 0.75rem 1rem;
-  background: var(--bg-card); border: 1px solid var(--border);
+  background: var(--bg-card); border: 1px solid var(--border-light);
+  border-radius: var(--radius) 0 0 var(--radius);
   border-right: none; color: var(--cream);
   font-family: 'Crimson Pro', serif; font-size: 1rem; outline: none;
 }
@@ -629,15 +651,16 @@ p { margin-bottom: 1rem; }
 
 /* Emphasised quick link (Play Online) - same row, louder treatment */
 .quick-link-primary {
-  background: var(--copper); border: 1px solid var(--copper);
-  padding: 0.8rem 0.75rem; margin: 0.35rem 0;
+  background: var(--play); border: 1px solid var(--play); border-radius: var(--radius);
+  padding: 0.8rem 0.75rem; margin: 0.35rem 0; color: var(--play-ink);
 }
 .quick-link-primary:hover {
-  background: var(--copper-light); border-color: var(--copper-light);
+  background: var(--play-light); border-color: var(--play-light); color: var(--play-ink);
 }
 .quick-link-primary .quick-link-label,
 .quick-link-primary .quick-link-arrow,
-.quick-link-primary:hover .quick-link-label { color: var(--ink); }
+.quick-link-primary:hover .quick-link-label { color: var(--play-ink); }
+.quick-link-primary .quick-link-icon { display: flex; }
 /* Tightened so the longer label stays on one line in the 280px column */
 .quick-link-primary .quick-link-label { font-size: 0.68rem; letter-spacing: 0.04em; white-space: nowrap; }
 .quick-link-primary .quick-link-icon { font-size: 1rem; }
@@ -645,7 +668,7 @@ p { margin-bottom: 1rem; }
 
 /* Kickstarter campaign link - Kickstarter green with their K mark */
 .quick-link-kickstarter {
-  background: var(--kickstarter); border: 1px solid var(--kickstarter);
+  background: var(--kickstarter); border: 1px solid var(--kickstarter); border-radius: var(--radius);
   padding: 0.8rem 0.75rem; margin: 0.35rem 0; color: var(--ink);
 }
 .quick-link-kickstarter:last-child { padding-bottom: 0.8rem; }
@@ -693,7 +716,11 @@ p { margin-bottom: 1rem; }
     width: 100%;
   }
   .signup-form { flex-direction: column; }
-  .signup-form input[type="email"] { border-right: 1px solid var(--border); border-bottom: none; }
+  .signup-form input[type="email"] {
+    border-right: 1px solid var(--border-light); border-bottom: none;
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+  .signup-form .btn { border-radius: 0 0 var(--radius) var(--radius); justify-content: center; }
   .hero-stats { gap: 1.5rem; }
   .games-grid { grid-template-columns: 1fr; }
   .game-group-header { flex-wrap: wrap; row-gap: 0.6rem; }
